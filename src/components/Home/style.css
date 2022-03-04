@@ -5,3 +5,6 @@
     box-sizing: border-box;
     font-family: 'Philosopher', sans-serif;
 }
+.cover{
+    height: 100vh;
+}
