@@ -32,7 +32,7 @@
 }
 .card .details {
   position: relative;
-  top: 333px;
+  top: 300px;
   padding: 0;
   opacity: 0;
   height: 100px;
@@ -42,7 +42,7 @@
 .card .see-more {
   opacity: 0;
   position: relative;
-  top: 270px;
+  top: 240px;
   left: 200px;
   animation: viewMore;
   animation-duration: 1s;
@@ -91,13 +91,23 @@
   animation-name: expand2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
 }
 @keyframes expand2 {
   0% {
     transform: translateX(70px) translateY(100px) scale(1.6);
   }
   100% {
-    transform: translateX(70px) translateY(100px) scaleX(4) scaleY(3);
+    transform: translateX(70px) translateY(100px) scale(4);
   }
+}
+.cross {
+  position: relative;
+  left: 120px;
+  font-size: 32px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.cross-active {
+  opacity: 1;
 }

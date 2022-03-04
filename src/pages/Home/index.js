@@ -5,7 +5,6 @@ import EventCard from "../../components/EventCard/eventCard.jsx";
 const HomePage = () => {
   return (
     <>
-      Home page
       <Home />
       <EventCard />
     </>

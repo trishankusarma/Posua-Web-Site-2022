@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./eventCardStyles.css";
 import viewMore from "../../assets/view more.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const EventCard = (props) => {
   const [expand, setExpand] = useState(0);
@@ -14,11 +16,16 @@ const EventCard = (props) => {
         onClick={() => {
           if (expand === 0) {
             setExpand(1);
-          } else if (expand === 2) {
-            setExpand(0);
           }
         }}
       >
+        <FontAwesomeIcon
+          icon={faXmark}
+          className={`cross ${expand ? "cross-active" : ""}`}
+          onClick={() => {
+            setExpand(0);
+          }}
+        />
         <div className="details">
           <h2>{props.name1}</h2>
           <p>{props.name2}</p>

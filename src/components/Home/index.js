@@ -1,12 +1,8 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
 
 const Home = () => {
-  return (
-    <div className='cover'>
-      Home Component
-    </div>
-  )
-}
+  return <div className="cover"></div>;
+};
 
-export default Home
+export default Home;
