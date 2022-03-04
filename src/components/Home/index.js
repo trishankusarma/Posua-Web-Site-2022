@@ -1,9 +1,10 @@
 import React from 'react'
+import './style.css'
 
 const Home = () => {
   return (
     <div>
-        Home Component
+      Home Component
     </div>
   )
 }
