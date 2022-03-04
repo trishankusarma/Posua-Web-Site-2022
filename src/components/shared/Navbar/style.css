@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     top: 0;
+    background-color: transparent !important;
 }
 .navbar li{
     font-weight: 400;
