@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from '../../components/Home'
+import Prev from '../../components/Home/Prev'
+import './style.css'
 
 const HomePage = () => {
   return (
-    <> 
-       Home page
-       < Home />
+    <>
+      <Prev />
     </>
   )
 }
