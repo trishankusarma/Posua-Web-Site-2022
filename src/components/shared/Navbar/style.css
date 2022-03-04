@@ -1,0 +1,25 @@
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: transparent !important;
+}
+.navbar li{
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar .posua img{
+    width: 1.25rem;
+}
+.navbar .posua{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #ED1B24;
+    display: flex;
+    align-items: center;
+}
+.navbar .bg-light{
+    background-color: transparent !important;
+}
