@@ -1,7 +1,8 @@
-body{
-    padding: 0;
-    margin: 0;
-    background-color: #fff9ed;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff9ed;
+  overflow-x: hidden;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -100,7 +101,6 @@ body{
   padding: 0;
 }
 
-
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .container1 {
@@ -109,7 +109,6 @@ body{
   position: relative;
   width: 70%;
   height: 80vh;
-  /* background: #f1f1f1; */
   margin: 100px auto 0;
   margin-top: 0;
   word-break: break-all;
@@ -119,7 +118,7 @@ body{
   display: flex;
 }
 
-.ContentHeader{
+.ContentHeader {
   width: 292px;
   display: flex;
   align-self: center;
@@ -128,7 +127,6 @@ body{
   color: #7d776b;
   font-weight: 400;
 }
-
 
 .tabs {
   font-size: 30px;
@@ -141,26 +139,13 @@ body{
   box-sizing: content-box;
   position: relative;
   outline: none;
+  transition: 350ms;
 }
-/* .tabs:not(:last-child){
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
-} */
 
 .active-tabs {
   background: white;
   border-radius: 20px;
 }
-
-/* .active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
-} */
 
 button {
   border: none;
@@ -175,24 +160,26 @@ button {
   width: 100%;
   height: 100%;
   display: none;
+  transition: 350ms;
 }
 
 .active-content {
   display: inline-block;
+  transition: 350ms;
 }
 
-.imageHeader{
+.imageHeader {
   position: relative;
   top: 20px;
   font-size: 40px;
   font-family: "Philosopher", sans-serif;
-  color: #554F39;
+  color: #554f39;
   margin-top: 40px;
   text-align: center;
   font-weight: 400;
 }
 
-.borderImage{
+.borderImage {
   position: absolute;
   top: 0%;
   left: 28.25%;
@@ -222,9 +209,153 @@ button {
   display: inline-block;
   margin-bottom: 10px;
   overflow: hidden;
+  transition: 350ms;
 }
 
-.footer{
+.imgage img {
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+.footer {
+  position: relative;
+  top: 130vh;
+}
+
+@media (max-width: 664px) {
+  .navbar {
+    display: none;
+  }
+
+  .HeaderSection {
+    height: 50vh;
+  }
+
+  .GalleryHeading {
+    font-size: 3.75rem;
+    width: 60%;
+  }
+
+  .GallerySubHeader {
+    font-size: 1.875rem;
+  }
+
+  .headerSubSection {
+    width: 70%;
+  }
+
+  .GallerySubHeader {
+    width: 85%;
+  }
+
+  .GalleryHeaderBorder {
+    border-top: solid 3px #cd4e4e;
+    width: 85%;
+  }
+
+  .imageHeader {
+    margin-bottom: 80px;
+  }
+
+  .borderImage {
+    display: none;
+  }
+
+  .container1 {
+    width: 90%;
+  }
+
+  .tabs {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .ContentHeader {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+    /* top: 55vh; */
+  }
+}
+
+@media (max-width: 491px) {
+  .GallerySubHeader {
+    font-size: 1.5625rem;
+    width: 90%;
+  }
+
+  .headerSubSection {
+    width: 75%;
+  }
+
+  .GalleryHeading {
+    font-size: 3rem;
+  }
+
+  .headerSubSection {
+    width: 85%;
+  }
+  
+  .GalleryHeaderBorder {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .headerSubSection {
+    width: 85%;
+  }
+
+  .container1 {
+    width: 100%;
+  }
+
+  .tabs {
+    font-size: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+@media(max-width: 380px){
+
+  .GallerySubHeader {
+    font-size: 1.3rem;
+}
+
+  .HeaderSection{
     position: relative;
-    top: 130vh;
+    top: 60px;
+  }
+  
+
+  .container1{
+    position: relative;
+    top: 140px;
+  }
+
+  .GalleryHeading {
+    font-size: 2.5rem;
+ }
+
+
 }
