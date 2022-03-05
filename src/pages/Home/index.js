@@ -1,11 +1,15 @@
 import React from 'react'
-import Home from '../../components/Home'
+import Prev from '../../components/Home/Prev'
+import Sponsers from '../../components/Home/Sponsers'
+import Timer from '../../components/Home/Timer'
+import './style.css'
 
 const HomePage = () => {
   return (
-    <> 
-       Home page
-       < Home />
+    <>
+      <Sponsers />
+      <Prev />
+      <Timer />
     </>
   )
 }
