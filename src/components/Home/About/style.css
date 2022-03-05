@@ -1,0 +1,36 @@
+.about{
+    background-color: #FFF9ED;
+    
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ED1B24;
+
+}
+.about img{
+    height: calc(1.375rem + 1.5vw);
+    margin: 0 2rem;
+    
+}
+.about .wrapper{
+    width: 70%;
+    margin: auto;
+    position: relative;
+
+}
+.about .wrapper img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.about p{
+    position: absolute;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 400;
+    top: 20%;
+    padding: 0 10%
+}
