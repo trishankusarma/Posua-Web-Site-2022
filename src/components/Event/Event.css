@@ -1,0 +1,60 @@
+.top-section {
+  height: 70vh;
+  width: 90vw;
+  margin: 10vh auto;
+  margin-bottom: 0;
+  /* padding: 10vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-section .events {
+  background: url("../../assets/EVENTS.svg") no-repeat;
+  height: 40%;
+  width: 40vw;
+  display: inline-block;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  top: 5vh;
+}
+.top-section .dance-bg {
+  background: url("../../assets/Rectangle\ 18.svg") no-repeat;
+  height: 100%;
+  width: 40vw;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+}
+.main-section {
+  height: 100vh;
+  /* margin-bottom: 50vh; */
+  z-index: 1;
+}
+.carousel {
+  width: 90vw;
+  margin: auto;
+  height: 100%;
+}
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+  font-size: 15px !important;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+  font-size: 15px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}

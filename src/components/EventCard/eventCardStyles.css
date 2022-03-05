@@ -17,6 +17,10 @@
   top: 30px;
   left: -6px;
 }
+.card:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
 .card .details h2 {
   padding: 0 10px;
   color: white;
@@ -69,6 +73,7 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+  z-index: 20;
 }
 @keyframes expand1 {
   0% {
@@ -91,6 +96,8 @@
   animation-name: expand2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  z-index: 40;
+  background-size: cover;
 }
 @keyframes expand2 {
   0% {
