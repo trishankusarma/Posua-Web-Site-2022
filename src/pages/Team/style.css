@@ -39,17 +39,12 @@
     align-items: center;
     padding: 0 4em;
 }
-/* 
-.japi{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
+
 .japi .midImg{
     margin: 0 1.6em;
 }
 
-.left-card, .right-card{
+.left-card, .right-card, .mid-card{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,7 +90,67 @@
     display: block;
     justify-content: space-between;
     align-items: center;
-    /* padding: 8em 6em 8em 6em; */
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.outer-frame{
+    background: url(../.././assets/red-frame.png);
+    width: 18.5rem;
+    height: 22rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.outer-frame img{
+    width: 14.2rem;
+    height: 17.5rem;
+    object-fit: cover;
+    resize: both;
+    margin-top: 40px;
+}
+
+ .outer-frame:hover .image {
+    transform: translateY(-5.5rem);
+  }
+  
+ .outer-frame:hover .frame-content {
+    transform: translateY(-1rem);
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .frame-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.7rem;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+
+.frame-name{
+    font-size: 1.2em;
+}
+
+.frame-role{
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 980px)
@@ -123,11 +178,15 @@
         justify-content: flex-end;
     }
 
+    .mid-card{
+        display: flex;
+        justify-content: center;
+    }
+
     .bottom-cards{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 6em 6em;
     }
 
 }
