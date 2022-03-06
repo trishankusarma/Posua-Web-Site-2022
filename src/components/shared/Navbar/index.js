@@ -20,7 +20,7 @@ function Navbar() {
                             <a className="nav-link active" href="/">Gallery</a>
                         </li>
                         <li className="nav-item mx-4">
-                            <a className="nav-link active" href="/">Team</a>
+                            <a className="nav-link active" href="/team">Team</a>
                         </li>
                     </ul>
                 </div>
