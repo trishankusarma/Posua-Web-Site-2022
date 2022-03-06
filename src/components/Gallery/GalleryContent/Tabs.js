@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Gallery2022 from "./galleryComponents/Gallery2022";
+import Gallery2021 from "./galleryComponents/Gallery2021";
 import Gallery2019 from "./galleryComponents/Gallery2019";
 import Gallery2018 from "./galleryComponents/Gallery2018";
 import Gallery2017 from "./galleryComponents/Gallery2017";
@@ -16,7 +16,7 @@ function Tabs() {
     setToggleState(index);
   };
 
-  const year = [2022,2019,2018,2017,2016,2015,2014];
+  const year = [2021,2019,2018,2017,2016,2015,2014];
 
   return (
     <div className="container1">
@@ -73,7 +73,7 @@ function Tabs() {
         >
           <h2 className="imageHeader">Glimpses of {year[0]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
-          <Gallery2022/>
+          <Gallery2021/>
         </div>
 
         <div

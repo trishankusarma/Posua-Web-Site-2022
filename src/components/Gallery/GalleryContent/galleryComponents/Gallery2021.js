@@ -1,15 +1,14 @@
 import React from 'react'
-import pic1 from "../../../../assets/GalleryImages/2015/p1.jpg"
-import pic2 from "../../../../assets/GalleryImages/2015/p2.jpg"
-import pic3 from "../../../../assets/GalleryImages/2015/p3.jpg"
-import pic4 from "../../../../assets/GalleryImages/2015/p4.jpg"
-import pic5 from "../../../../assets/GalleryImages/2015/p5.jpg"
-import pic6 from "../../../../assets/GalleryImages/2015/p6.jpg"
-import pic7 from "../../../../assets/GalleryImages/2015/p7.jpg"
-import pic8 from "../../../../assets/GalleryImages/2015/p8.jpg"
+import pic1 from "../../../../assets/GalleryImages/2021/p1.jpg"
+import pic2 from "../../../../assets/GalleryImages/2021/p2.jpg"
+import pic3 from "../../../../assets/GalleryImages/2021/p3.jpg"
+import pic4 from "../../../../assets/GalleryImages/2021/p4.jpg"
+import pic5 from "../../../../assets/GalleryImages/2021/p5.jpg"
+import pic6 from "../../../../assets/GalleryImages/2021/p6.jpg"
+import pic7 from "../../../../assets/GalleryImages/2021/p7.jpg"
+import pic8 from "../../../../assets/GalleryImages/2021/p8.jpg"
 
-
-function Gallery2015() {
+function Gallery2021() {
   return (
     <div>
       <div class="gallery">
@@ -42,4 +41,4 @@ function Gallery2015() {
   )
 }
 
-export default Gallery2015
+export default Gallery2021
