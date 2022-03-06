@@ -9,8 +9,6 @@ import line2 from '../.././assets/line2.png'
 
 export default function Team1() {
 
-   
-
 return (
   <>
     <div className="main">
