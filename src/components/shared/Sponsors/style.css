@@ -1,0 +1,28 @@
+.sponsers{
+    background-color: #FFF9ED;
+    position: relative;
+    /* height: 100vh; */
+}
+.sponsers h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ED1B24;
+
+}
+.sponsers img{
+    height: calc(1.375rem + 1.5vw);
+    margin: 0 2rem;
+    
+}
+.sponsers .sponser-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.sponsers .sponser-img img{
+    height: 100px;
+    margin: 50px;
+}
