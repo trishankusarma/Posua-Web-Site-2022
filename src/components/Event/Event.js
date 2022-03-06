@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import EventCard from "../EventCard/eventCard";
 import "./Event.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ const SamplePrevArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FontAwesomeIcon icon={faChevronLeft} color="white" size="2x" />
+      <FontAwesomeIcon icon={faChevronLeft} color="grey" size="2x" />
     </div>
   );
 };
@@ -23,10 +23,43 @@ const SampleNextArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FontAwesomeIcon icon={faChevronRight} color="white" size="2x" />
+      <FontAwesomeIcon icon={faChevronRight} color="grey" size="2x" />
     </div>
   );
 };
+
+// const events = [
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+//   {
+//     name1: "name1",
+//     name2: "name2",
+//     bgImg: "rgb(63, 63, 63)",
+//   },
+// ];
 const Event = () => {
   let settings = {
     className: "center",
@@ -64,6 +97,7 @@ const Event = () => {
       },
     ],
   };
+  const [active, setActive] = useState(false);
   return (
     <>
       <div className="top-section">
@@ -71,18 +105,41 @@ const Event = () => {
         <div className="dance-bg"></div>
       </div>
       <div className="main-section">
-        <div className="carousel">
-          <Slider {...settings} className="carousel-container">
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
+        <div className={active ? "carousel-inactive" : "carousel"}>
+          <Slider {...settings}>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
+            <div onClick={() => setActive(true)}>
+              <EventCard />
+            </div>
           </Slider>
+        </div>
+        <div className={active ? "grid" : "grid-inactive"}>
+          <div>
+            <EventCard />
+          </div>
+          <div>
+            <EventCard />
+          </div>
+          <div>
+            <EventCard />
+          </div>
+          <div>
+            <EventCard />
+          </div>
         </div>
       </div>
     </>
