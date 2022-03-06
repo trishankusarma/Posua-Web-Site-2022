@@ -1,0 +1,16 @@
+.cover{
+    position: relative;
+    height: 110vh;
+    background-image: url('/src/assets/coverbg.png');
+}
+.cover .grass{
+    position: absolute;
+    bottom: -10%;
+    width: 100%;
+    height: auto;
+}
+.cover .tree{
+    height: 100%;
+    position: absolute;
+    left: 0;
+}

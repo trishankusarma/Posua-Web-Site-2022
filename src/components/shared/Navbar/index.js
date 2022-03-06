@@ -22,6 +22,9 @@ function Navbar() {
                         <li className="nav-item mx-4">
                             <a className="nav-link active" href="/">Team</a>
                         </li>
+                        <li className="nav-item mx-4">
+                            <a className="nav-link active" href="/">Artists</a>
+                        </li>
                     </ul>
                 </div>
             </div>
