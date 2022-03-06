@@ -1,0 +1,15 @@
+.tags{
+    color: #554F39;
+    background-color: #FFF9ED;
+}
+.tags p{
+    margin-bottom: 0;
+    margin: auto;
+}
+.tags .content{
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+}

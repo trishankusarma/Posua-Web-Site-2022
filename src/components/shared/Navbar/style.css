@@ -3,6 +3,7 @@
     width: 100%;
     top: 0;
     background-color: transparent !important;
+    z-index: 5;
 }
 .navbar li{
     font-weight: 400;
