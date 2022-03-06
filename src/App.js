@@ -7,8 +7,8 @@ import Sponsor from './pages/Sponsor';
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={< Home />} />
           <Route exact path="/sponsors" element={<Sponsor />} />
