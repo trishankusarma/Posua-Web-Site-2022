@@ -1,0 +1,13 @@
+.invitation{
+    background-color: #FFF9ED;
+    padding: 0 20%;
+}
+.invitation img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:768px) {
+    .invitation{
+        padding: 0%;
+    }
+}

@@ -6,7 +6,7 @@ import bg from '../../../assets/about_bg.png'
 
 function About() {
     return (
-        <div className='about pt-5'>
+        <div className='about mt-5'>
             <h1 className='text-center mb-3'><img src={japi} alt='japi' /> ABOUT US <img src={japi} alt='japi' /></h1>
             <div className='wrapper'>
                 <img src={bg} alt='bg' />
