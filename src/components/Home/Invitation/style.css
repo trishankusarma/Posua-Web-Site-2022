@@ -6,3 +6,8 @@
     width: 100%;
     height: auto;
 }
+@media screen and (max-width:768px) {
+    .invitation{
+        padding: 0%;
+    }
+}

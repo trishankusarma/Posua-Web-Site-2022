@@ -67,7 +67,7 @@ function Accordion() {
             {datas.map((data, index) => (
                 <div key={index} className={"accordion py-3" + (index === tabIndex ? " accordion-active" : "")}>
                     <div className='dropdown'>
-                        <button type='button' className='accordion_button' onClick={(e) => openTab(e, index)}><img src={japi} alt='japi' /> {data.heading} <img src={japi} alt='japi' /></button>
+                        <button type='button' className='accordion_button' onClick={(e) => openTab(e, index)}><img src={japi} alt='japi' /><span> {data.heading} </span><img src={japi} alt='japi' /></button>
                         <img className='arrow' src={arrow} alt='arrow' />
                     </div>
                     <div className='content'>
