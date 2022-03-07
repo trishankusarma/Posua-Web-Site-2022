@@ -31,7 +31,7 @@ function Footer() {
                         <h3>
                             <span>Mail</span>
                         </h3>
-                        <p>Posuamail@example.com</p>
+                        <p>posua@nits.ac.in</p>
                     </div>
                 </div>
             </div>

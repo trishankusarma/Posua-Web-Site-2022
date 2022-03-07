@@ -1,0 +1,41 @@
+.about{
+    background-color: #FFF9ED;
+    position: relative;
+    
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ED1B24;
+
+}
+.about img{
+    height: calc(1.375rem + 1.5vw);
+    margin: 0 2rem;
+    
+}
+.about .wrapper{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    padding: 5% 0;
+
+}
+.about .wrapper img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+.about p{
+    color: #4E4A41;
+    position: relative;
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 10%
+}
