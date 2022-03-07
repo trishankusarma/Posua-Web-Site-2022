@@ -28,6 +28,11 @@
     background-color: white;
     padding: 15px;
 }
+.accordion span{
+    display:inline-block;
+    width: auto;
+}
+
 .accordion .dropdown{
     position: relative;
 }
@@ -58,4 +63,17 @@
 }
 .accordion-active .content{
     max-height: 300px;
+}
+
+@media screen and (max-width:768px) {
+    .accordion button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-size: 1rem;
+    }
+    .accordion span{
+        width: 50%;
+    }
 }

@@ -6,6 +6,6 @@
     font-family: 'Philosopher', sans-serif;
     /* overflow-x: hidden; */
 }
-body{
+#root{
     overflow-x: hidden;
 }
