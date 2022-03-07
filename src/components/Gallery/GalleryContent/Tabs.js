@@ -6,7 +6,7 @@ import Gallery2017 from "./galleryComponents/Gallery2017";
 import Gallery2016 from "./galleryComponents/Gallery2016";
 import Gallery2015 from "./galleryComponents/Gallery2015";
 import Gallery2014 from "./galleryComponents/Gallery2014";
-import "../style.css";
+import "../Gallery.css";
 import borderImage from "../../../assets/GalleryImages/Group22.png"
 
 function Tabs() {
@@ -69,7 +69,7 @@ function Tabs() {
       <div className="content-tabs">
         
         <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
+          className={toggleState === 1 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader">Glimpses of {year[0]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -77,7 +77,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
+          className={toggleState === 2 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[1]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -85,7 +85,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
+          className={toggleState === 3 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[2]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -93,7 +93,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 4 ? "content  active-content" : "content"}
+          className={toggleState === 4 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[3]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -101,7 +101,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 5 ? "content  active-content" : "content"}
+          className={toggleState === 5 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[4]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -109,7 +109,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 6 ? "content  active-content" : "content"}
+          className={toggleState === 6 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[5]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
@@ -117,7 +117,7 @@ function Tabs() {
         </div>
 
         <div
-          className={toggleState === 7 ? "content  active-content" : "content"}
+          className={toggleState === 7 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[6]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>

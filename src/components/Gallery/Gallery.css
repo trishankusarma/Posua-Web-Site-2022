@@ -7,7 +7,7 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.cover {
+.cover1 {
   height: 220vh;
 }
 
@@ -97,13 +97,13 @@ body {
 
 /* tab bar and img css */
 
-*,
+/* *,
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
@@ -158,7 +158,7 @@ button {
 .content-tabs {
   flex-grow: 1;
 }
-.content {
+.content1 {
   background: transparent;
   padding: 0 20px;
   width: 100%;
@@ -167,7 +167,7 @@ button {
   transition: 350ms;
 }
 
-.active-content {
+.active-content1 {
   display: inline-block;
   transition: 350ms;
 }
@@ -310,7 +310,7 @@ button {
 }
 
 @media (max-width: 415px) {
-  .cover {
+  .cover1 {
     height: 310vh;
   }
 

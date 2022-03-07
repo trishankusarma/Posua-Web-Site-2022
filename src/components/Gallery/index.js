@@ -1,11 +1,11 @@
 import React from 'react'
 import GalleryContent from './GalleryContent/GalleryContent'
 import GalleryHeader from './GalleryHeader/GalleryHeader'
-import './style.css'
+import './Gallery.css'
 
 const Gallery = () => {
   return (
-    <div className='cover'>
+    <div className='cover1'>
         <GalleryHeader/>
         <GalleryContent/>
     </div>
