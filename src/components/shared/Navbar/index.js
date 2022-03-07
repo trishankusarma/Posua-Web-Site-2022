@@ -28,7 +28,7 @@ function Navbar() {
                             <a className="nav-link active" href="/team">Team</a>
                         </li>
                         <li className="nav-item mx-4">
-                           <Link className="nav-link active" to='/'>Gallery</Link>
+                           <Link className="nav-link active" to='/gallery'>Gallery</Link>
                         </li>
                         <li className="nav-item mx-4">
                             <Link className="nav-link active" to='/artists'>Artists</Link>
