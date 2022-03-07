@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "../../components/Home";
+import Event from "../../components/Event/Event";
 
 const HomePage = () => {
   return (
     <>
-      <Home />
+      <Event />
     </>
   );
 };

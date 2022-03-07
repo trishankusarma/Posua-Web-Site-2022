@@ -1,36 +1,41 @@
 .top-section {
   height: 70vh;
-  width: 90vw;
-  margin: 10vh auto;
-  margin-bottom: 0;
-  /* padding: 10vh; */
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgba(255, 249, 237, 1);
+  box-sizing: content-box;
 }
 .top-section .events {
   background: url("../../assets/EVENTS.svg") no-repeat;
-  height: 40%;
-  width: 40vw;
+  /* background-size: contain */
+  height: 300px;
+  width: 300px;
   display: inline-block;
   margin: auto;
   align-content: center;
-  position: relative;
-  top: 5vh;
+  position: absolute;
+  left: 100px;
+  top: 400px;
 }
 .top-section .dance-bg {
   background: url("../../assets/Rectangle\ 18.svg") no-repeat;
   height: 100%;
-  width: 40vw;
+  width: 600px;
   display: inline-block;
-  margin: 0;
-  padding: 20px;
+  /* margin: 0; */
+  /* padding: 20px; */
+  position: absolute;
+  right: 100px;
+  top: 150px;
 }
 .main-section {
-  height: 100vh;
+  height: 200vh;
   /* margin-bottom: 50vh; */
   z-index: 1;
+  background-color: rgba(255, 249, 237, 1);
 }
 .carousel {
   width: 90vw;
@@ -85,6 +90,143 @@
   display: grid;
   grid-template-columns: 25% 50% 25%;
 }
+.item:nth-of-type(1) {
+  position: relative;
+  animation-name: card1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.item:nth-of-type(2) {
+  position: relative;
+  z-index: 1;
+  animation-name: card2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.item:nth-of-type(3) {
+  position: relative;
+  animation-name: card3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+.item:nth-of-type(4) {
+  position: relative;
+  animation-name: card4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 0;
+}
+.grid-inactive {
+  display: none;
+}
 .slick-track {
   height: 100vh;
+}
+/* @keyframes expand1 {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translateX(70px) translateY(120px) scale(1.6);
+  }
+} */
+@keyframes card1 {
+  0% {
+    position: relative;
+    transform: translateX(-50px);
+  }
+  50% {
+    transform: translateY(50px) translateX(0);
+  }
+  100% {
+    transform: translateY(50px) translateX(0) scale(1.1);
+  }
+}
+@keyframes card2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(-50px) scale(1.2);
+  }
+}
+@keyframes card2x {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(-25px) scale(1);
+  }
+}
+@keyframes card3 {
+  0% {
+    position: relative;
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateY(50px) translateX(0);
+  }
+  100% {
+    transform: translateY(50px) translateX(0) scale(1.1);
+  }
+}
+@keyframes card4 {
+  0% {
+    position: relative;
+    transform: translateX(1100px) translateY(-200px);
+  }
+  50% {
+    transform: translateY(-50px) translateX(1050px);
+  }
+  100% {
+    transform: translateY(-50px) translateX(1050px) scale(1.1);
+  }
+}
+.item-inactive {
+  opacity: 0;
+}
+@media only screen and (max-width: 500px) {
+  .top-section .events {
+    position: relative;
+    left: 31px;
+    top: 66px;
+  }
+  .top-section .dance-bg {
+    height: 90%;
+    width: 537px;
+    display: inline-block;
+    /* margin: 0; */
+    /* padding: 20px; */
+    position: absolute;
+    right: -56px;
+    top: 295px;
+  }
+  .item:nth-of-type(1) {
+    display: none;
+  }
+  .item:nth-of-type(2) {
+    position: relative;
+    z-index: 1;
+    animation-name: card2x;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .item:nth-of-type(3) {
+    display: none;
+  }
+  .item:nth-of-type(4) {
+    display: none;
+  }
 }

@@ -28,38 +28,32 @@ const SampleNextArrow = (props) => {
   );
 };
 
-// const events = [
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-//   {
-//     name1: "name1",
-//     name2: "name2",
-//     bgImg: "rgb(63, 63, 63)",
-//   },
-// ];
+const events = [
+  {
+    name1: "Manthan",
+    name2: "Cultural Show",
+  },
+  {
+    name1: "Manthan",
+    name2: "Cultural Show",
+  },
+  {
+    name1: "Manthan",
+    name2: "Cultural Show",
+  },
+  {
+    name1: "Manthanv",
+    name2: "Cultural Show",
+  },
+  {
+    name1: "Manthan",
+    name2: "Cultural Show",
+  },
+  {
+    name1: "Manthan",
+    name2: "Cultural Show",
+  },
+];
 const Event = () => {
   let settings = {
     className: "center",
@@ -88,7 +82,7 @@ const Event = () => {
         },
       },
       {
-        breakpoint: 426,
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -98,6 +92,8 @@ const Event = () => {
     ],
   };
   const [active, setActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
+  let gridEvent = 0;
   return (
     <>
       <div className="top-section">
@@ -107,38 +103,76 @@ const Event = () => {
       <div className="main-section">
         <div className={active ? "carousel-inactive" : "carousel"}>
           <Slider {...settings}>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
-            <div onClick={() => setActive(true)}>
-              <EventCard />
-            </div>
+            {events.map((event, index) => (
+              <div
+                onClick={() => {
+                  setActiveIndex(index + 1);
+                  setActive(true);
+                }}
+              >
+                <EventCard
+                  expand={false}
+                  name1={event.name1}
+                  name2={event.name2}
+                  bgImg={event.bgImg}
+                  key={index}
+                />
+              </div>
+            ))}
           </Slider>
         </div>
         <div className={active ? "grid" : "grid-inactive"}>
-          <div>
-            <EventCard />
+          {events.forEach((eventI, index) => {
+            if (activeIndex === index + 1) {
+              gridEvent = eventI;
+            }
+          })}
+          <div className={` ${active === 2 ? "item-inactive" : "item"}`}>
+            <EventCard
+              expand={false}
+              name1={
+                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                  .name1
+              }
+              name2={
+                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                  .name2
+              }
+              bgImg={
+                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                  .bgImg
+              }
+              key={activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex}
+            />
           </div>
-          <div>
-            <EventCard />
+          <div className="item">
+            <EventCard
+              expand={true}
+              name1={gridEvent.name1}
+              name2={gridEvent.name2}
+              bgImg={gridEvent.bgImg}
+              key={activeIndex - 1}
+              changeActive={(active1) => setActive(active1)}
+            />
           </div>
-          <div>
-            <EventCard />
+
+          <div className={` ${active === 2 ? "item-inactive" : "item"}`}>
+            <EventCard
+              expand={false}
+              name1={events[activeIndex >= 5 ? 0 : activeIndex + 1].name1}
+              name2={events[activeIndex >= 5 ? 0 : activeIndex + 1].name2}
+              bgImg={events[activeIndex >= 5 ? 0 : activeIndex + 1].bgImg}
+              key={activeIndex >= 5 ? 0 : activeIndex + 1}
+            />
           </div>
-          <div>
-            <EventCard />
+          <div className={` ${active === 2 ? "item-inactive" : "item"}`}>
+            <EventCard
+              expand={false}
+              name1={events[activeIndex >= 5 ? 1 : activeIndex + 2].name1}
+              name2={events[activeIndex >= 5 ? 1 : activeIndex + 2].name2}
+              bgImg={events[activeIndex >= 5 ? 1 : activeIndex + 2].bgImg}
+              key={activeIndex >= 5 ? 0 : activeIndex + 2}
+            />
           </div>
         </div>
       </div>
@@ -147,3 +181,36 @@ const Event = () => {
 };
 
 export default Event;
+
+/* <EventCard
+  expand={false}
+  name1={events[0].name1}
+  name2={events[0].name2}
+  bgImg={events[0].bgImg}
+  key={0}
+/>
+{events.forEach((eventI, index) => {
+  if (activeIndex === index + 1) {
+    <EventCard
+      expand={activeIndex === index + 1}
+      name1={eventI.name1}
+      name2={eventI.name2}
+      bgImg={eventI.bgImg}
+      key={index}
+    />;
+  }
+})}
+<EventCard
+  expand={false}
+  name1={events[3].name1}
+  name2={events[3].name2}
+  bgImg={events[3].bgImg}
+  key={3}
+/>
+<EventCard
+  expand={false}
+  name1={events[4].name1}
+  name2={events[4].name2}
+  bgImg={events[4].bgImg}
+  key={4}
+/> */
