@@ -7,6 +7,10 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+.cover {
+  height: 220vh;
+}
+
 .HeaderSection > * {
   margin: 0;
   padding: 0;
@@ -229,11 +233,6 @@ button {
   }
 }
 
-.footer {
-  position: relative;
-  top: 130vh;
-}
-
 @media (max-width: 664px) {
   .navbar {
     display: none;
@@ -285,11 +284,6 @@ button {
   .ContentHeader {
     display: none;
   }
-
-  .footer {
-    display: none;
-    /* top: 55vh; */
-  }
 }
 
 @media (max-width: 491px) {
@@ -316,6 +310,14 @@ button {
 }
 
 @media (max-width: 415px) {
+  .cover {
+    height: 310vh;
+  }
+
+  .REMOVE{
+    display: none;
+  }
+
   .headerSubSection {
     width: 85%;
   }

@@ -26,7 +26,7 @@ function Tabs() {
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          2022
+          2021
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}

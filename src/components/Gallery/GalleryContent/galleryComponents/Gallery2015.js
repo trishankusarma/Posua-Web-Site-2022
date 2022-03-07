@@ -34,7 +34,7 @@ function Gallery2015() {
       <div class="imgage">
       <img src={pic7} alt=""/>
       </div>
-      <div class="imgage">
+      <div class="imgage REMOVE">
       <img src={pic8} alt=""/>
       </div>
     </div>

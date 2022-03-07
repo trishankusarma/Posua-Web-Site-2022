@@ -18,10 +18,10 @@ function Gallery2017() {
       <div class="imgage">
       <img src={pic2} alt=""/>
       </div>
-      <div class="imgage">
+      <div class="imgage ">
       <img src={pic3} alt=""/>
       </div>
-      <div class="imgage">
+      <div class="imgage REMOVE">
       <img src={pic4} alt=""/>
       </div>
       <div class="imgage">
