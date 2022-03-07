@@ -31,7 +31,7 @@ function Navbar() {
                            <Link className="nav-link active" to='/'>Gallery</Link>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Artists</Link>
+                            <Link className="nav-link active" to='/artists'>Artists</Link>
                         </li>
                     </ul>
                 </div>
