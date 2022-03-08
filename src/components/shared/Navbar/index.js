@@ -19,7 +19,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Event</Link>
+                            <Link className="nav-link active" to='/events'>Event</Link>
                         </li>
                         <li className="nav-item mx-4">
                             <Link className="nav-link active" to='/sponsors'>Sponsors</Link>
@@ -40,4 +40,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;

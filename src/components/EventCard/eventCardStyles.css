@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Philosopher&display=swap");
+
+.card-container {
+  height: 450px;
+  width: 320px;
+  position: relative;
+  margin: 100px auto;
+}
+.card {
+  height: 410px;
+  width: 291px;
+  font-family: "Philosopher", sans-serif;
+  cursor: pointer;
+  transition: all 1s;
+  z-index: 10;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  opacity: 0.9;
+}
+.card:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.card .details h2 {
+  /* padding: 0 10px; */
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+.card .details p {
+  /* padding: 10px; */
+  color: red;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card .details {
+  position: relative;
+  top: 300px;
+  padding: 0;
+  opacity: 0;
+  height: 100px;
+  margin-left: 20px;
+  transition: opacity 0.5s;
+}
+.card .details-active {
+  background: url("../../assets/Group\ 27.svg") no-repeat;
+  background-size: contain;
+  position: relative;
+  bottom: 150px;
+  right: 40px;
+  height: 140px;
+  width: 200px;
+  animation-name: details;
+  animation-duration: 1s;
+}
+@keyframes details {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card .details-active p {
+  display: none;
+}
+.card .details-active h2 {
+  color: red;
+  position: relative;
+  top: 60px;
+  left: 30px;
+}
+.card .see-more {
+  opacity: 1;
+  position: relative;
+  top: 180px;
+  left: 200px;
+  animation: viewMore;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: 20;
+}
+.card .see-more-inactive {
+  display: none;
+}
+.card:hover .details {
+  opacity: 1;
+}
+.card:hover + .card-bg {
+  opacity: 1;
+}
+.card-bg {
+  background: url("../../assets/Group\ 70.svg") no-repeat;
+  opacity: 0;
+  height: 450px;
+  width: 320px;
+  transition: opacity 0.5s;
+  transform: scaleY(1.3) scaleX(1.1);
+}
+.card-container .card-expand1 {
+  transform: translateY(100px) scale(1.2);
+  animation-name: expand1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 20;
+}
+@keyframes expand1 {
+  0% {
+    transform: translateY(100px) scale(1.2);
+    position: relative;
+    left: -200px;
+  }
+  100% {
+    transform: translateX(70px) translateY(120px) scale(1.4);
+    position: relative;
+    left: 0px;
+  }
+}
+@keyframes viewMore {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card-container .card-expand2 {
+  transform: translateY(150px) scale(1.6) translateX(10px);
+  animation-name: expand2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  background-size: cover;
+  opacity: 1;
+  background-size: cover;
+}
+@keyframes expand2 {
+  0% {
+    transform: translateY(150px) scale(2) translateX(10px);
+  }
+  100% {
+    transform: translateY(150px) scale(4) translateX(10px);
+  }
+}
+.cross {
+  position: relative;
+  left: 120px;
+  font-size: 32px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.cross-active {
+  opacity: 1;
+}
+.content-inactive {
+  display: none;
+}
+.content {
+  z-index: 1000 !important;
+  color: white;
+  display: flex;
+  transform: scale(0.5);
+  position: absolute;
+  top: -144px;
+  left: -197px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .para {
+  transform: scale(0.5);
+  position: relative;
+  top: 253px;
+  left: 299px;
+  font-size: 20px;
+}
+.content .details-max {
+  position: absolute;
+  top: 300px;
+  background: url("../../assets/Group\ 27.svg") right no-repeat;
+  background-size: contain;
+  padding: 20px;
+  left: 230px;
+  height: 300px;
+}
+.content .details-max p {
+  color: red;
+  font-size: 20px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+@media only screen and (max-width: 425px) {
+  .expand2 {
+    transform: scale(2);
+  }
+  .content .details-max {
+    left: 330px;
+    top: 100px;
+    transform: scale(0.8);
+    background: url("../../assets/Group\ 27.svg") left no-repeat;
+    background-size: contain;
+  }
+  .content .details-max p,
+  h2 {
+    margin-left: 10px;
+  }
+  .content .para {
+    top: 244px;
+    left: 199px;
+    transform: scale(0.4);
+    font: 12px;
+  }
+  .cross {
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    color: #fff;
+    opacity: 0;
+  }
+  .card .details-active {
+    left: 10px;
+  }
+  .card .see-more {
+    top: 207px;
+    left: 110px;
+  }
+}
