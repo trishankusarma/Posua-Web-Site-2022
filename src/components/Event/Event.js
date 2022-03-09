@@ -100,7 +100,7 @@ const Event = () => {
         <div className="events"></div>
         <div className="dance-bg"></div>
       </div>
-      <div className="main-section">
+      <div className={active ? "main-section-large" : "main-section"}>
         <div className={active ? "carousel-inactive" : "carousel"}>
           <Slider {...settings}>
             {events.map((event, index) => (
@@ -109,6 +109,7 @@ const Event = () => {
                   setActiveIndex(index + 1);
                   setActive(true);
                 }}
+                key={index}
               >
                 <EventCard
                   expand={false}

@@ -31,7 +31,7 @@ const EventCard = (props) => {
             setExpand(1);
           }}
         />
-        <div className={` ${expand ? "details-active" : "details"}`}>
+        <div className={` ${!(expand === 2 || expand === false) ? "details-active" : "details"}`}>
           <h2>{props.name1}</h2>
           <p>{props.name2}</p>
         </div>
@@ -42,7 +42,7 @@ const EventCard = (props) => {
               : "see-more-inactive"
           }`}
           onClick={() => {
-            props.changeActive(true);
+            props.changeActive(2);
             setExpand(2);
           }}
         >
@@ -52,7 +52,7 @@ const EventCard = (props) => {
             style={{ width: "150px" }}
           />
         </div>
-        <div className={`${expand === 2 ? "content" : "content-inactive"}`}>
+        <div className={`${expand === 2 ? "contents" : "content-inactive"}`}>
           <div className="details-max">
             <p>{props.date}</p>
             <h2>{props.name1}</h2>
@@ -68,7 +68,7 @@ EventCard.defaultProps = {
   expand: "false",
   name1: "name",
   name2: "name2",
-  key: "",
+  key: "1",
   BgImg: BgImg,
   date: "March 26",
   content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,

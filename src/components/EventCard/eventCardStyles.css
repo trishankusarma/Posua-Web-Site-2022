@@ -143,10 +143,10 @@
 }
 @keyframes expand2 {
   0% {
-    transform: translateY(150px) scale(2) translateX(10px);
+    transform: translateY(250px) scale(2) translateX(10px);
   }
   100% {
-    transform: translateY(150px) scale(4) translateX(10px);
+    transform: translateY(350px) scale(2.6) translateX(10px);
   }
 }
 .cross {
@@ -163,7 +163,7 @@
 .content-inactive {
   display: none;
 }
-.content {
+.contents {
   z-index: 1000 !important;
   color: white;
   display: flex;
@@ -175,14 +175,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.content .para {
+.contents .para {
   transform: scale(0.5);
   position: relative;
   top: 253px;
   left: 299px;
   font-size: 20px;
 }
-.content .details-max {
+.contents .details-max {
   position: absolute;
   top: 300px;
   background: url("../../assets/Group\ 27.svg") right no-repeat;
@@ -191,7 +191,7 @@
   left: 230px;
   height: 300px;
 }
-.content .details-max p {
+.contents .details-max p {
   color: red;
   font-size: 20px;
   margin-top: 70px;
@@ -201,18 +201,22 @@
   .expand2 {
     transform: scale(2);
   }
-  .content .details-max {
+  .contents{
+    top: -119px;
+    left: -253px;
+  }
+  .contents .details-max {
     left: 330px;
     top: 100px;
     transform: scale(0.8);
     background: url("../../assets/Group\ 27.svg") left no-repeat;
     background-size: contain;
   }
-  .content .details-max p,
+  .contents .details-max p,
   h2 {
     margin-left: 10px;
   }
-  .content .para {
+  .contents .para {
     top: 244px;
     left: 199px;
     transform: scale(0.4);
@@ -232,4 +236,10 @@
     top: 207px;
     left: 110px;
   }
+  .cross-active {
+  opacity: 1;
+  position: absolute;
+    top: 2px;
+    left: 55vw;
+}
 }

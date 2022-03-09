@@ -5,19 +5,19 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(255, 249, 237, 1);
+  background: url(../.././assets/bg.png);
   box-sizing: content-box;
 }
 .top-section .events {
   background: url("../../assets/EVENTS.svg") no-repeat;
   /* background-size: contain */
-  height: 300px;
+  height: 160px;
   width: 300px;
   display: inline-block;
   margin: auto;
   align-content: center;
   position: absolute;
-  left: 100px;
+  left: 130px;
   top: 400px;
 }
 .top-section .dance-bg {
@@ -32,10 +32,17 @@
   top: 150px;
 }
 .main-section {
-  height: 200vh;
+  height: 100vh;
   /* margin-bottom: 50vh; */
   z-index: 1;
-  background-color: rgba(255, 249, 237, 1);
+  background: url(../.././assets/bg.png);
+  width: 100vw;
+}
+.main-section-large{
+  height: 200vh;
+  z-index: 1;
+  background: url(../.././assets/bg.png);
+  width: 100vw;
 }
 .carousel {
   width: 90vw;
@@ -199,17 +206,15 @@
 @media only screen and (max-width: 500px) {
   .top-section .events {
     position: relative;
-    left: 31px;
+    left: 23px;
     top: 66px;
   }
   .top-section .dance-bg {
     height: 90%;
-    width: 537px;
+    width: 594px;
     display: inline-block;
-    /* margin: 0; */
-    /* padding: 20px; */
     position: absolute;
-    right: -56px;
+    right: -125px;
     top: 295px;
   }
   .item:nth-of-type(1) {
