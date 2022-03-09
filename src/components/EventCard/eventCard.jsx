@@ -25,7 +25,7 @@ const EventCard = (props) => {
       >
         <FontAwesomeIcon
           icon={faXmark}
-          className={`cross ${expand ? "cross-active" : ""}`}
+          className={`cross ${expand ? "cross-active" : ""} ${expand===2 ? "cross-active-2" : ""}`}
           onClick={() => {
             props.changeActive(false);
             setExpand(1);
