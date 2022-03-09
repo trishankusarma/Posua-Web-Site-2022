@@ -10,7 +10,7 @@ import nrl from '../../../assets/nrl_logo.png'
 function Prev() {
     return (
         <div className='prev pt-5'>
-            <h1 className='text-center'><img src={japi} alt='japi' /> PREVIOUS YEAR SPONSORS <img src={japi} alt='japi' /></h1>
+            <h1 className='text-center'><img className='japi-animation' src={japi} alt='japi' /> PREVIOUS YEAR SPONSORS <img className='japi-animation' src={japi} alt='japi' /></h1>
             <div className='sponser-img'>
                 <img src={hyundai} alt='logo' />
                 <img src={pran} alt='logo' />
