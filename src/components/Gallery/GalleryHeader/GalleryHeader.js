@@ -6,9 +6,9 @@ function GalleryHeader() {
   return (
     <div className='HeaderSection'>
         <div className="headerSubSection">
-            <img src={pic} alt='japi-img'></img> 
+            <img className="Japi" src={pic} alt='japi-img'></img> 
             <h1 className='GalleryHeading'>GALLERY</h1>
-            <img src={pic} alt='japi-img'></img> 
+            <img className="Japi" src={pic} alt='japi-img'></img> 
         </div>
         <GallerySubHeader/>
     </div>
