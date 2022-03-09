@@ -4,7 +4,7 @@ import './style.css'
 function Tags() {
     return (
         <div className='tags py-5'>
-            <div className='content'>
+            <div className='tag-content'>
                 <h3 className='py-3'>#tags</h3>
                 <p>
                     #চেনেহৰ_বতৰা_লৈ_পছোৱা_আহিছে_ঐ<br />

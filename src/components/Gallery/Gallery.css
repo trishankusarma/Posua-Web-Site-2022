@@ -234,9 +234,9 @@ button {
 }
 
 @media (max-width: 664px) {
-  .navbar {
+  /* .navbar {
     display: none;
-  }
+  } */
 
   .HeaderSection {
     height: 50vh;

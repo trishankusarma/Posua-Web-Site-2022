@@ -6,10 +6,16 @@
     margin-bottom: 0;
     margin: auto;
 }
-.tags .content{
+.tags .tag-content{
     text-align: center;
     background-color: white;
     width: 400px;
     margin: auto;
     padding: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .tags .tag-content{
+        width: 100%;
+    }
 }
