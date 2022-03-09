@@ -42,7 +42,7 @@ const events = [
     name2: "Cultural Show",
   },
   {
-    name1: "Manthanv",
+    name1: "Manthan",
     name2: "Cultural Show",
   },
   {
@@ -58,7 +58,6 @@ const Event = () => {
   let settings = {
     className: "center",
     centerMode: true,
-    // infinite: true,
     centerPadding: "60px",
     slidesToShow: 4,
     speed: 1000,
@@ -94,6 +93,7 @@ const Event = () => {
   const [active, setActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   let gridEvent = 0;
+  let n = events.length;
   return (
     <>
       <div className="top-section">
@@ -132,18 +132,18 @@ const Event = () => {
             <EventCard
               expand={false}
               name1={
-                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                events[activeIndex===1 || activeIndex<=0? n-1:activeIndex - 2]
                   .name1
               }
               name2={
-                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                events[activeIndex===1 || activeIndex<=0? n-1:activeIndex - 2]
                   .name2
               }
               bgImg={
-                events[activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex]
+                events[activeIndex===1 || activeIndex<=0? n-1:activeIndex - 2]
                   .bgImg
               }
-              key={activeIndex <= 0 || activeIndex >= 6 ? 5 : activeIndex}
+              key={activeIndex===1 || activeIndex<=0? n-1:activeIndex - 2}
             />
           </div>
           <div className="item">
@@ -160,19 +160,19 @@ const Event = () => {
           <div className={` ${active === 2 ? "item-inactive" : "item"}`}>
             <EventCard
               expand={false}
-              name1={events[activeIndex >= 5 ? 0 : activeIndex + 1].name1}
-              name2={events[activeIndex >= 5 ? 0 : activeIndex + 1].name2}
-              bgImg={events[activeIndex >= 5 ? 0 : activeIndex + 1].bgImg}
-              key={activeIndex >= 5 ? 0 : activeIndex + 1}
+              name1={events[activeIndex===n || activeIndex<=0? 0: activeIndex].name1}
+              name2={events[activeIndex===n || activeIndex<=0? 0: activeIndex].name2}
+              bgImg={events[activeIndex===n || activeIndex<=0? 0: activeIndex].bgImg}
+              key={activeIndex===n || activeIndex<=0? 0: activeIndex}
             />
           </div>
           <div className={` ${active === 2 ? "item-inactive" : "item"}`}>
             <EventCard
               expand={false}
-              name1={events[activeIndex >= 5 ? 1 : activeIndex + 2].name1}
-              name2={events[activeIndex >= 5 ? 1 : activeIndex + 2].name2}
-              bgImg={events[activeIndex >= 5 ? 1 : activeIndex + 2].bgImg}
-              key={activeIndex >= 5 ? 0 : activeIndex + 2}
+              name1={events[activeIndex>=n-1 || activeIndex<=0? 0: activeIndex+1].name1}
+              name2={events[activeIndex>=n-1 || activeIndex<=0? 0: activeIndex+1].name2}
+              bgImg={events[activeIndex>=n-1 || activeIndex<=0? 0: activeIndex+1].bgImg}
+              key={activeIndex===n-1 || activeIndex<=0? 0: activeIndex+1}
             />
           </div>
         </div>
@@ -182,36 +182,3 @@ const Event = () => {
 };
 
 export default Event;
-
-/* <EventCard
-  expand={false}
-  name1={events[0].name1}
-  name2={events[0].name2}
-  bgImg={events[0].bgImg}
-  key={0}
-/>
-{events.forEach((eventI, index) => {
-  if (activeIndex === index + 1) {
-    <EventCard
-      expand={activeIndex === index + 1}
-      name1={eventI.name1}
-      name2={eventI.name2}
-      bgImg={eventI.bgImg}
-      key={index}
-    />;
-  }
-})}
-<EventCard
-  expand={false}
-  name1={events[3].name1}
-  name2={events[3].name2}
-  bgImg={events[3].bgImg}
-  key={3}
-/>
-<EventCard
-  expand={false}
-  name1={events[4].name1}
-  name2={events[4].name2}
-  bgImg={events[4].bgImg}
-  key={4}
-/> */
