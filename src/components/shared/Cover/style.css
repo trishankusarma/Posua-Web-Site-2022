@@ -8,6 +8,7 @@
     bottom: -10%;
     width: 100%;
     height: auto;
+    z-index: 2;
 }
 .cover .tree{
     height: 100%;

@@ -1,6 +1,7 @@
 .prev{
     background-color: #FFF9ED;
     /* height: 100vh; */
+    background: url(../../../assets/bg.png);
 }
 .prev h1{
     display: flex;

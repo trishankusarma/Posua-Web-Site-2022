@@ -288,7 +288,10 @@ button {
 }
 
 @media (max-width: 664px) {
-  
+  /* .navbar {
+    display: none;
+  } */
+
   .HeaderSection {
     height: 50vh;
   }

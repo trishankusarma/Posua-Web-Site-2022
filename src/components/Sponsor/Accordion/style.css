@@ -16,6 +16,7 @@
 }
 .accordion{
     background-color: #FFF9ED;
+    background: url(../../../assets/bg.png);
 }
 
 .accordion button{

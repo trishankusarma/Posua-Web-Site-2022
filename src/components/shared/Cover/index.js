@@ -10,6 +10,7 @@ import cloudlg from '../../../assets/cloudLight.svg'
 function Cover() {
     return (
         <div className='cover'>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_Kqzytj.json" background="transparent" speed="1" style={{ width: '100%', height: '50vh', position: 'absolute' }} loop autoplay></lottie-player>
             <img className='grass' src={grass} alt='grass' />
             <img className='tree' src={tree} alt='grass' />
             <img className='nasoni' src={nasoni} alt='grass' />
