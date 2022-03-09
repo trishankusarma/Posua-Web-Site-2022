@@ -3,7 +3,8 @@
     width: 100%;
     top: 0;
     background-color: transparent !important;
-    z-index: 5;
+    transition: background-color 200ms linear;
+    z-index: 10;
 }
 .navbar li{
     font-weight: 400;
@@ -17,10 +18,43 @@
 .navbar .posua{
     font-size: 1.5rem;
     font-weight: normal;
-    color: #ED1B24;
+    color: #ED1B24 !important;
     display: flex;
     align-items: center;
 }
 .navbar .bg-light{
     background-color: transparent !important;
+}
+
+.navbar-brand{
+    visibility: hidden;
+}
+.nav-link{
+    transition: 0.2s;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-open{
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        transition: background-color 200ms linear;
+    }
+    .navbar-brand{
+        visibility: visible;
+    }
+    .navbar-brand .posua{
+        font-size: 2rem;
+    }
+    .posua-link{
+        display: none;
+    }
+    .nav-link{
+        color: white !important;
+        opacity: 0.7;
+        margin: auto;
+    }
+    .isActive{
+        color: #ED1B24 !important;
+        opacity: 1;
+        font-size: larger;
+    }
 }

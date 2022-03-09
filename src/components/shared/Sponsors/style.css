@@ -1,6 +1,8 @@
 .sponsers{
     background-color: #FFF9ED;
     position: relative;
+    background: url(../../../assets/bg.png);
+    z-index: 3;
     /* height: 100vh; */
 }
 .sponsers h1{

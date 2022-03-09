@@ -1,6 +1,7 @@
 .tags{
     color: #554F39;
     background-color: #FFF9ED;
+    background: url(../../../assets/bg.png);
 }
 .tags p{
     margin-bottom: 0;

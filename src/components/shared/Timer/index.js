@@ -44,7 +44,7 @@ function Timer() {
         return () => clearInterval(timerInt);
     }, []);
     return (
-        <div className='timer-wrapper pt-5'>
+        <div className='timer-wrapper py-5'>
             <div id="timer">
                 {display.map((interval, index) => {
                     return (
