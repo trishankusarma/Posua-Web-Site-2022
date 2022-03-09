@@ -1,0 +1,35 @@
+.outer_div_artist_page {
+  width: 100%;
+  background: url("../../assets/bg.png");
+  padding: 15vh 0;
+  overflow: hidden;
+}
+.prev_artists,
+.upcomming_artists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.artist_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.artist_text h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+  background: -webkit-linear-gradient(
+    100deg,
+    rgba(255, 217, 168, 1),
+    rgba(244, 26, 1, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
