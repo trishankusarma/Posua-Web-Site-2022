@@ -1,0 +1,363 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff9ed;
+  overflow-x: hidden;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.cover1 {
+  height: 220vh;
+}
+
+.HeaderSection > * {
+  margin: 0;
+  padding: 0;
+}
+
+.HeaderSection {
+  width: 100vw;
+  height: 60vh;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerSubSection {
+  width: 500px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.GalleryHeading {
+  text-align: center;
+  width: 300px;
+  font-size: 60px;
+  margin: 0;
+  font-family: "Philosopher", sans-serif;
+  -webkit-text-stroke-width: 0px;
+  background-image: linear-gradient(90deg, #f41a01, #ffd9a8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.GallerySubHeader {
+  font-family: "Philosopher", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: #7d776b;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.GalleryHeaderBorder {
+  border-style: none;
+  border-top: solid 1px #cd4e4e;
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+.GalleryHeaderBorderIconSection {
+  width: 220px;
+  height: 50px;
+  position: relative;
+  bottom: 95px;
+  background-color: #fff9ed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.SmallJapi {
+  height: 40px;
+  width: 40px;
+}
+
+.MidJapi {
+  position: relative;
+  bottom: 6px;
+  height: 50px;
+  width: 50px;
+}
+
+/* tab bar and img css */
+
+/* *,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 70%;
+  height: 80vh;
+  margin: 100px auto 0;
+  margin-top: 0;
+  word-break: break-all;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+
+.ContentHeader {
+  width: 292px;
+  display: flex;
+  align-self: center;
+  font-size: 30px;
+  font-family: "Philosopher", sans-serif;
+  color: #7d776b;
+  font-weight: 400;
+}
+
+.tabs {
+  font-size: 30px;
+  font-family: "Philosopher", sans-serif;
+  color: #7d776b;
+  padding: 5px 10px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  transition: 350ms;
+}
+
+.active-tabs {
+  background: white;
+  border-radius: 20px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content1 {
+  background: transparent;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: 350ms;
+}
+
+.active-content1 {
+  display: inline-block;
+  transition: 350ms;
+}
+
+.imageHeader {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  font-family: "Philosopher", sans-serif;
+  color: #554f39;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.borderImage {
+  position: absolute;
+  top: 0%;
+  left: 28.25%;
+  width: 450px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+}
+
+/* gallery */
+.image-gallery {
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.gallery {
+  position: relative;
+  column-count: 3;
+  margin: 4%;
+  gap: 1%;
+}
+
+.imgage {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: 350ms;
+}
+
+.imgage img {
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 664px) {
+  .navbar {
+    display: none;
+  }
+
+  .HeaderSection {
+    height: 50vh;
+  }
+
+  .GalleryHeading {
+    font-size: 3.75rem;
+    width: 60%;
+  }
+
+  .GallerySubHeader {
+    font-size: 1.875rem;
+  }
+
+  .headerSubSection {
+    width: 70%;
+  }
+
+  .GallerySubHeader {
+    width: 85%;
+  }
+
+  .GalleryHeaderBorder {
+    border-top: solid 3px #cd4e4e;
+    width: 85%;
+  }
+
+  .imageHeader {
+    margin-bottom: 80px;
+  }
+
+  .borderImage {
+    display: none;
+  }
+
+  .container1 {
+    width: 90%;
+  }
+
+  .tabs {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .ContentHeader {
+    display: none;
+  }
+}
+
+@media (max-width: 491px) {
+  .GallerySubHeader {
+    font-size: 1.5625rem;
+    width: 90%;
+  }
+
+  .headerSubSection {
+    width: 75%;
+  }
+
+  .GalleryHeading {
+    font-size: 3rem;
+  }
+
+  .headerSubSection {
+    width: 85%;
+  }
+  
+  .GalleryHeaderBorder {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .cover1 {
+    height: 310vh;
+  }
+
+  .REMOVE{
+    display: none;
+  }
+
+  .headerSubSection {
+    width: 85%;
+  }
+
+  .container1 {
+    width: 100%;
+  }
+
+  .tabs {
+    font-size: 20px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+@media(max-width: 380px){
+
+  .GallerySubHeader {
+    font-size: 1.3rem;
+}
+
+  .HeaderSection{
+    position: relative;
+    top: 60px;
+  }
+  
+
+  .container1{
+    position: relative;
+    top: 140px;
+  }
+
+  .GalleryHeading {
+    font-size: 2.5rem;
+ }
+
+
+}

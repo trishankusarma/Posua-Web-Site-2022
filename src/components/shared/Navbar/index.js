@@ -19,19 +19,19 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Event</Link>
+                            <Link className="nav-link active" to='/events'>Event</Link>
                         </li>
                         <li className="nav-item mx-4">
                             <Link className="nav-link active" to='/sponsors'>Sponsors</Link>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Gallery</Link>
+                            <a className="nav-link active" href="/team">Team</a>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Team</Link>
+                           <Link className="nav-link active" to='/gallery'>Gallery</Link>
                         </li>
                         <li className="nav-item mx-4">
-                            <Link className="nav-link active" to='/'>Artists</Link>
+                            <Link className="nav-link active" to='/artists'>Artists</Link>
                         </li>
                     </ul>
                 </div>
@@ -40,4 +40,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
