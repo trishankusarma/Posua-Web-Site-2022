@@ -74,3 +74,8 @@
         font-size: larger;
     }
 }
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
