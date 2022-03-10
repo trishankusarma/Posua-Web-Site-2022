@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./eventCardStyles.css";
-import viewMore from "../../assets/view more.svg";
+import viewMore from "../../assets/view more.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import BgImg from "../../assets/EventBg.svg";
 
 const EventCard = (props) => {
-  const [expand, setExpand] = useState(props.expand);
+  const [expand, setExpand] = useState(props.expand); // state for handling card scalling
   return (
     <div className="card-container">
       <div
@@ -27,7 +27,7 @@ const EventCard = (props) => {
           icon={faXmark}
           className={`cross ${expand ? "cross-active" : ""} ${expand===2 ? "cross-active-2" : ""}`}
           onClick={() => {
-            props.changeActive(false);
+            props.changeActive(false); // special function to handle child to parent state handler
             setExpand(1);
           }}
         />
@@ -71,16 +71,6 @@ EventCard.defaultProps = {
   key: "1",
   BgImg: BgImg,
   date: "March 26",
-  content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            alias repellat facilis ducimus, a maxime recusandae error soluta
-            libero inventore autem temporibus similique blanditiis iure! Nihil
-            provident soluta atque temporibus libero neque, voluptatem similique
-            quibusdam incidunt, molestias laudantium itaque explicabo,
-            architecto aut! Nihil distinctio dolorem reprehenderit iusto
-            inventore tempore odit laborum eveniet consequatur ex ipsum, animi
-            perspiciatis adipisci, saepe ipsa, architecto nostrum repudiandae
-            illum minima veritatis velit nobis magni voluptate? Pariatur
-            perspiciatis cumque officia natus vero obcaecati nam. Autem,
-            suscipit!`,
+  content: `The most awaited and anticipated event of POSUA is Manthan,in which the fabulous performance of renowned performers of Assam rejuvenates everyone’s spirit in the campus.Distinguished performers Zubeen Garg,Manash Robin,Dikshu,Srimanta Shekhar have already graced the stage of Manthan with their presence and exuberant performance in the past years.This year too, NITS Family is excited for the extravagant Manthan under POSUA’22.`,
 };
 export default EventCard;

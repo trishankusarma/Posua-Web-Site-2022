@@ -3,8 +3,8 @@ import EventCard from "../EventCard/eventCard";
 import "./Event.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronLeft,
-  faChevronRight,
+  faCircleChevronLeft,
+  faCircleChevronRight
 } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -14,7 +14,7 @@ const SamplePrevArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FontAwesomeIcon icon={faChevronLeft} color="grey" size="2x" />
+      <FontAwesomeIcon icon={faCircleChevronLeft} color="rgba(0, 0, 0, 0.7)" size="2x" />
     </div>
   );
 };
@@ -23,10 +23,27 @@ const SampleNextArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FontAwesomeIcon icon={faChevronRight} color="grey" size="2x" />
+      <FontAwesomeIcon icon={faCircleChevronRight} color="rgba(0, 0, 0, 0.7)" size="2x" />
     </div>
   );
 };
+
+/*events array contains all the events.
+
+Each event object has the following fields / props:
+
+1. name1: The name of the event. Eg: Manthan
+2. name2: The event discription.Eg: Cultural event
+3. BgImg: The Background image of the event. (Import the file to pass into the array)
+4. date: The date of the event.
+5. content: The content describing the event.
+
+Following props / fields should not be added to the array objects:
+
+1. expand: Is a state handler prop.
+2. changeActive: Is a prop function to manage state change.
+3. key: Automatically handled for each event.
+*/
 
 const events = [
   {
@@ -63,6 +80,7 @@ const Event = () => {
     speed: 1000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1000,
@@ -90,8 +108,8 @@ const Event = () => {
       },
     ],
   };
-  const [active, setActive] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [active, setActive] = useState(false); // state for handling grid-flexbox view
+  const [activeIndex, setActiveIndex] = useState(-1); // state for getting the index of the active event when clicked
   let gridEvent = 0;
   let n = events.length;
   return (

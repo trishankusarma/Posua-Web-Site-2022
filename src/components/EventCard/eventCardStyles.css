@@ -16,7 +16,6 @@
   position: absolute;
   top: -25px;
   left: 15px;
-  opacity: 0.9;
 }
 .card:hover {
   opacity: 1;
@@ -80,7 +79,7 @@
   opacity: 1;
   position: relative;
   top: 180px;
-  left: 200px;
+  left: 130px;
   animation: viewMore;
   animation-duration: 1s;
   animation-delay: 1s;
@@ -178,7 +177,7 @@
 .contents .para {
   transform: scale(0.5);
   position: relative;
-  top: 253px;
+  top: 300px;
   left: 299px;
   font-size: 20px;
 }
@@ -207,7 +206,7 @@
   }
   .contents .details-max {
     left: 330px;
-    top: 100px;
+    top: 95px;
     transform: scale(0.8);
     background: url("../../assets/Group\ 27.svg") left no-repeat;
     background-size: contain;
@@ -217,7 +216,7 @@
     margin-left: 10px;
   }
   .contents .para {
-    top: 244px;
+    top: 300px;
     left: 199px;
     transform: scale(0.4);
     font: 12px;
@@ -233,7 +232,7 @@
     left: 10px;
   }
   .card .details{
-    margin-left: 44px;
+    margin-left: 53px;
   }
   .card .see-more {
     top: 207px;
@@ -246,6 +245,14 @@
     left: 55vw;
 }
 .cross-active-2{
+  opacity: 1;
+  position: absolute;
+    top: 2px;
+    left: 40vw;
+}
+}
+@media only screen and (max-width: 350px){
+  .cross-active-2{
   opacity: 1;
   position: absolute;
     top: 2px;
