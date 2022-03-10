@@ -21,7 +21,7 @@ function Tabs() {
   return (
     <div className="container1">
       <div className="bloc-tabs">
-      <h1 className="ContentHeader">Glimpses of:</h1>
+        <h1 className="ContentHeader">Glimpses of:</h1>
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
@@ -64,6 +64,21 @@ function Tabs() {
         >
           2014
         </button>
+
+        <button
+          className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(8)}
+        >
+          2013
+        </button>
+
+        <button
+          className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(9)}
+        >
+          2012
+        </button>
+
       </div>
 
       <div className="content-tabs">
@@ -118,6 +133,22 @@ function Tabs() {
 
         <div
           className={toggleState === 7 ? "content1  active-content1" : "content1"}
+        >
+          <h2 className="imageHeader" >Glimpses of {year[6]}</h2>
+          <img className="borderImage" src={borderImage} alt="" ></img>
+          <Gallery2014/>
+        </div>
+
+        <div
+          className={toggleState === 8 ? "content1  active-content1" : "content1"}
+        >
+          <h2 className="imageHeader" >Glimpses of {year[6]}</h2>
+          <img className="borderImage" src={borderImage} alt="" ></img>
+          <Gallery2014/>
+        </div>
+
+        <div
+          className={toggleState === 9 ? "content1  active-content1" : "content1"}
         >
           <h2 className="imageHeader" >Glimpses of {year[6]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
