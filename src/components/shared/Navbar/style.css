@@ -51,6 +51,9 @@
         background-color: rgba(0, 0, 0, 0.2) !important;
         
     }
+    .navbar-toggle{
+        display: block !important;
+    }
     .navbar-open{
         background-color: rgba(0, 0, 0, 0.6) !important;
         transition: background-color 200ms linear;
@@ -78,7 +81,9 @@
         display: none;
     }
 }
-
+.navbar-toggle{
+    display: none;
+}
 .navbar-light .navbar-toggler {
     color: transparent;
     border-color: transparent;
