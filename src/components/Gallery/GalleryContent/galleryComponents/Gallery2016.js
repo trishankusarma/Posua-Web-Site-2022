@@ -11,33 +11,33 @@ import pic8 from "../../../../assets/GalleryImages/2016/p8.jpg"
 function Gallery2016() {
   return (
     <div>
-      <div class="gallery">
-      <div class="imgage">
-        <img src={pic1} alt=""/>
-      </div>
-      <div class="imgage REMOVE">
-      <img src={pic2} alt=""/>
-      </div>
-      <div class="imgage">
-      <img src={pic3} alt=""/>
-      </div>
-      <div class="imgage">
-      <img src={pic4} alt=""/>
-      </div>
-      <div class="imgage">
-      <img src={pic5} alt=""/>
-      </div>
-      {/* <div class="imgage">
+      <div className="gallery">
+        <div className="imgage">
+          <img src={pic1} alt="" />
+        </div>
+        <div className="imgage REMOVE">
+          <img src={pic2} alt="" />
+        </div>
+        <div className="imgage">
+          <img src={pic3} alt="" />
+        </div>
+        <div className="imgage">
+          <img src={pic4} alt="" />
+        </div>
+        <div className="imgage">
+          <img src={pic5} alt="" />
+        </div>
+        {/* <div className="imgage">
       <img src={pic6} alt=""/>
       </div> */}
-      <div class="imgage">
-      <img src={pic7} alt=""/>
-      </div>
-      <div class="imgage">
-      <img src={pic8} alt=""/>
+        <div className="imgage">
+          <img src={pic7} alt="" />
+        </div>
+        <div className="imgage">
+          <img src={pic8} alt="" />
+        </div>
       </div>
     </div>
-      </div>
   )
 }
 

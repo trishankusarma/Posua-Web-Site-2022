@@ -1,5 +1,6 @@
 .timer-wrapper{
     background-color: #FFF9ED;
+    background: url(../../../assets/bg.png);
 }
 div#timer {
 
@@ -63,6 +64,14 @@ div#timer {
     font-size: 7vh;
     color: #7D776B;
   }
+
+  .tag{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    padding: 0 5vh;
+  }
   
   
   @media screen and (max-width : 1000px) {
@@ -100,6 +109,11 @@ div#timer {
   @media screen and (max-width : 700px) {
     .timer-heading h2{
       font-size: 2.5vh;
+    }
+    .tag{
+      padding: 0;
+      text-align: center;
+      flex-direction: column;
     }
   }
   

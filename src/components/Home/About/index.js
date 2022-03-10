@@ -6,8 +6,8 @@ import bg from '../../../assets/about_bg.png'
 
 function About() {
     return (
-        <div className='about mt-5'>
-            <h1 className='text-center mb-3'><img src={japi} alt='japi' /> ABOUT US <img src={japi} alt='japi' /></h1>
+        <div className='about pt-5 mt-lg-5 mt-0'>
+            <h1 className='text-center mb-3'><img src={japi} className='japi-animation' alt='japi' /> ABOUT US <img src={japi} className='japi-animation' alt='japi' /></h1>
             <div className='wrapper'>
                 <img src={bg} alt='bg' />
                 <p>Posua, the wind that brings rain to the dry and parched earth, an aroma of sweetness which brings the promise of spring.

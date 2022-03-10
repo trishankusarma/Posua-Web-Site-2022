@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 .about{
     background-color: #FFF9ED;
     position: relative;
-    
+    background: url(../../../assets/bg.png);
+    z-index: 3;
 }
 .about h1{
     display: flex;
@@ -30,21 +32,35 @@
     top: 0;
     left: 0;
 }
+.japi-animation{
+    animation: japi-animation 5s infinite linear;
+}
 .about p{
-    color: #4E4A41;
+    color: #722707;
     position: relative;
     margin: auto;
     margin-bottom: 0;
-    text-align: center;
-    font-weight: 400;
-    padding: 0 10%
+    font-weight: 600;
+    padding: 0 10%;
+    font-size:1.1rem;
+    font-family: 'Shadows Into Light', cursive;
+    /* text-shadow: 2px 2px #f9f2ed; */
 }
 @media screen and (max-width:768px) {
     .about .wrapper{
         width: 100%;
     }
     .about p{
-        padding: 5% 10%;
+        padding: 10% 10%;
         margin-top: 2rem;
+    }
+}
+
+@keyframes japi-animation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }

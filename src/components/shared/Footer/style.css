@@ -9,7 +9,9 @@
 .footer h3{
     color: white;
 }
-
+.footer .container{
+    padding: 0 !important;
+}
 .footer .container span{
     color: white;
     border-bottom: 1px solid white;
@@ -28,4 +30,10 @@
 }
 .footer .container a:hover{
     color: #ED1C24;
+}
+
+@media screen and (max-width:768px) {
+    .footer .container{
+        text-align: center;
+    }
 }

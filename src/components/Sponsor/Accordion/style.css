@@ -16,6 +16,7 @@
 }
 .accordion{
     background-color: #FFF9ED;
+    background: url(../../../assets/bg.png);
 }
 
 .accordion button{
@@ -64,7 +65,9 @@
 .accordion-active .content{
     max-height: 300px;
 }
-
+.acc-bg{
+    background: url(../../../assets/bg.png);
+}
 @media screen and (max-width:768px) {
     .accordion button{
         display: flex;
