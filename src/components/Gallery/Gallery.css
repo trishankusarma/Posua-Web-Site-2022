@@ -368,8 +368,12 @@ button {
 
 @media (max-width: 415px) {
 
+  .HeaderSection{
+    margin-top: 100px;
+  }
+
   .cover1 {
-    height: 290vh;
+    height: 295vh;
     padding-top: 20px;
   }
 
@@ -402,7 +406,7 @@ button {
 @media(max-width: 380px){
 
   .cover1{
-    height: 325vh;
+    height: 330vh;
   }
 
   .GallerySubHeader {
@@ -428,7 +432,7 @@ button {
 
 @media(max-height: 668px){
   .cover1{
-    height: 365vh;
+    height: 370vh;
   }
 }
 
