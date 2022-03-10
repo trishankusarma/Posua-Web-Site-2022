@@ -21,6 +21,7 @@ import line2 from '../.././assets/line2.png'
 import Carousel from 'react-elastic-carousel';
 
 
+
 export default function team() {
 
   const breakPoints = [
@@ -36,26 +37,29 @@ export default function team() {
         <div className="heading">
 
           <div className="heading-name">
-            <img src={japi} alt="" />
+            <img className='Japi' src={japi} alt="" />
             <span className="team">TEAM POSUA</span>
-            <img src={japi} alt="" />
+            <img className='Japi' src={japi} alt="" />
           </div>
+      
+       
 
-          <div className="heading-description">
-            <span className="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum assumenda quibusdam ipsam illum, accusantium earum ea nulla harum nihil fugit amet commodi eligendi consequuntur laudantium blanditiis ipsum ut corporis aliquam.</span>
-          </div>
+ 
+          <p className="GallerySubHeader mt-5">
+        A person filled with enthusiasm: such as. a : one who is ardently
+        attached to a cause, object, or pursuit a sports car enthusiast. b : one
+        who tends to become ardently absorbed in an interest.
+      </p>
+      <hr className='GalleryHeaderBorder'/>
+      <div className="GalleryHeaderBorderIconSection">
+        <img src={japi} className="SmallJapi" alt='japi-img'></img> 
+        <img src={japi} className="MidJapi" alt='japi-img'></img> 
+        <img src={japi} className="SmallJapi" alt='japi-img'></img> 
+        </div>  
 
-          <div className="line">
-            <img src={line1} alt="" style={{ width: "40%" }} />
-            <div className="japi">
-              <img src={japi} alt="" style={{ width: "2em" }} />
-              <img className="midImg" src={japi} alt="" style={{ width: "3em" }} />
-              <img src={japi} alt="" style={{ width: "2em" }} />
-            </div>
-            <img src={line2} alt="" style={{ width: "40%" }} />
-          </div>
+        </div>
 
-          <div className="container">
+          <div className="container mt-4">
             {/* row 1 */}
             <div className="cards">
               <div className="left-card">
@@ -355,7 +359,7 @@ export default function team() {
           </Carousel>
 
 
-        </div>
+        {/* </div> */}
       </div>
     </>
   )

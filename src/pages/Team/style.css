@@ -4,7 +4,21 @@
 {
     /* background-color: #FFF9ED; */
     background: url(../.././assets/bg.png);
+   
     padding-top: 8em;
+}
+
+.heading{
+    width: 100vw;
+    height: 60vh;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading-name{
@@ -40,6 +54,7 @@
     align-items: center;
     padding: 0 4em;
 }
+
 
 .japi .midImg{
     margin: 0 1.6em;
@@ -201,5 +216,9 @@
 {
     .content img{
         width: 8em;
+    }
+    .line{
+        width:  20px;
+        /* padding: 0 1em; */
     }
 }
