@@ -71,7 +71,7 @@ function Tabs() {
         <div
           className={toggleState === 1 ? "content1  active-content1" : "content1"}
         >
-          <h2 className="imageHeader">Glimpses of <br className="breaker"/>{year[0]}</h2>
+          <h2 className="imageHeader">Glimpses of {year[0]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
           <Gallery2021/>
         </div>
