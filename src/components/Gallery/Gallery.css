@@ -8,7 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .cover1 {
-  height: 220vh;
+  height: 225vh;
   background-color: #fff9ed;
   background-image: url(../../assets/bg.png);
   padding-top: 2rem;
@@ -176,9 +176,10 @@ body {
 }
 
 .active-tabs {
-  background: white;
+  color: #554f39;
+  background-image: url(../../assets/bg.png);
   border-radius: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
 button {
@@ -232,6 +233,8 @@ button {
   width: 100%;
   margin-top: 8rem;
 }
+
+
 
 .gallery {
   position: relative;
@@ -295,7 +298,7 @@ button {
 
   .GalleryHeading {
     font-size: 3.75rem;
-    width: 60%;
+    width: 63%;
   }
 
   .GallerySubHeader {
@@ -361,6 +364,7 @@ button {
 }
 
 @media (max-width: 415px) {
+
   .cover1 {
     height: 290vh;
     padding-top: 20px;
@@ -394,6 +398,10 @@ button {
 
 @media(max-width: 380px){
 
+  .cover1{
+    height: 325vh;
+  }
+
   .GallerySubHeader {
     font-size: 1.3rem;
 }
@@ -413,5 +421,12 @@ button {
     font-size: 2.5rem;
  }
 
-
 }
+
+@media(max-height: 668px){
+  .cover1{
+    height: 365vh;
+  }
+}
+
+
