@@ -18,12 +18,13 @@ function Navbar() {
         }
     }
     return (
-        <nav className={"navbar navbar-expand-lg navbar-light " + (isOpen ? "navbar-open" : "")}>
+        <nav className={"navbar navbar-default navbar-expand-lg navbar-light " + (isOpen ? "navbar-open" : "")}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'> <span className='posua'>P<img src={logo} alt='logo' />SUA</span></Link>
-                <button className="navbar-toggler" type="button" onClick={(e) => toggleColor(e)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon">
-                    </span>
+                <button type="button" class="navbar-toggle x collapsed" data-bs-toggle="collapse" onClick={(e) => toggleColor(e)} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ justifyContent: 'flex-end' }}>
                     <ul className="navbar-nav mb-2 mb-lg-0">
