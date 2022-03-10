@@ -45,7 +45,7 @@ const datas = [
 
 function Accordion() {
 
-    const [tabIndex, settabIndex] = useState(-1)
+    const [tabIndex, settabIndex] = useState(0)
 
     function openTab(e, index) {
         e.preventDefault()
@@ -63,7 +63,7 @@ function Accordion() {
     }
 
     return (
-        <>
+        <div className='acc-bg py-5'>
             {datas.map((data, index) => (
                 <div key={index} className={"accordion py-3" + (index === tabIndex ? " accordion-active" : "")}>
                     <div className='dropdown'>
@@ -77,7 +77,7 @@ function Accordion() {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 

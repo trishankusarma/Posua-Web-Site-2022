@@ -6,6 +6,9 @@
     transition: background-color 200ms linear;
     z-index: 10;
 }
+.nav-item{
+    position: relative;
+}
 .navbar li{
     font-weight: 400;
     font-size: 1.2rem;
@@ -32,10 +35,24 @@
 .nav-link{
     transition: 0.2s;
 }
+.underline{
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem;
+    display: none;
+}
+.isActive + .underline{
+    display: block;
+}
+
 
 @media screen and (max-width:768px) {
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        
+    }
     .navbar-open{
-        background-color: rgba(0, 0, 0, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
         transition: background-color 200ms linear;
     }
     .navbar-brand{
@@ -57,4 +74,68 @@
         opacity: 1;
         font-size: larger;
     }
+    .isActive + .underline{
+        display: none;
+    }
 }
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+.navbar-toggle .icon-bar {
+    width: 22px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+    margin-top: 4px;
+}
+
+/* ANIMATED X */
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+/* ANIMATED X COLLAPSED */
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+/* END ANIMATED X */
