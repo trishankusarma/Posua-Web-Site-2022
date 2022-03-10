@@ -37,7 +37,7 @@ function Gallery2021() {
         <div className="imgage">
           <img src={pic8} alt="" />
         </div>
-        <div className="imgage">
+        <div className="imgage REMOVE">
           <img src={pic9} alt="" />
         </div>
       </div>

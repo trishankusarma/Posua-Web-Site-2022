@@ -7,6 +7,7 @@ import pic5 from "../../../../assets/GalleryImages/2017/p5.jpg"
 import pic6 from "../../../../assets/GalleryImages/2017/p6.jpg"
 import pic7 from "../../../../assets/GalleryImages/2017/p7.jpg"
 import pic8 from "../../../../assets/GalleryImages/2017/p8.jpg"
+import pic9 from "../../../../assets/GalleryImages/2017/p9.jpg"
 
 function Gallery2017() {
   return (
@@ -35,6 +36,9 @@ function Gallery2017() {
         </div>
         <div className="imgage">
           <img src={pic8} alt="" />
+        </div>
+        <div className="imgage HIDE">
+          <img src={pic9} alt="" />
         </div>
       </div>
     </div>

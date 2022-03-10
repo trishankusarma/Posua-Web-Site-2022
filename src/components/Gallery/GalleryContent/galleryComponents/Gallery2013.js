@@ -33,7 +33,7 @@ function Gallery2013() {
       <div className="imgage">
         <img src={pic7} alt="" />
       </div>
-      <div className="imgage">
+      <div className="imgage REMOVE">
         <img src={pic8} alt="" />
       </div>
     </div>

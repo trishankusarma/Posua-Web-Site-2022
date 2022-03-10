@@ -8,7 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .cover1 {
-  height: 245vh;
+  height: 255vh;
   background-color: #fff9ed;
   background-image: url(../../assets/bg.png);
   padding-top: 2rem;
@@ -281,6 +281,10 @@ button {
 }
 /* zoom-effect */
 
+.HIDE{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .gallery {
@@ -385,12 +389,16 @@ button {
   }
 
   .cover1 {
-    height: 295vh;
+    height: 300vh;
     padding-top: 20px;
   }
 
   .REMOVE{
     display: none;
+  }
+
+  .HIDE{
+    display: unset;
   }
 
   .headerSubSection {
@@ -429,6 +437,11 @@ button {
     position: relative;
     top: 60px;
   }
+
+  
+  .tabs {
+    font-size: 20px;
+  }
   
 
   .container1{
@@ -444,7 +457,7 @@ button {
 
 @media(max-height: 668px){
   .cover1{
-    height: 370vh;
+    height: 373vh;
   }
 }
 
