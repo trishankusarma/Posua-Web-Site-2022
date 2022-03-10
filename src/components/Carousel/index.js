@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,7 +17,7 @@ import ArtistCard from "../ArtistCard";
 
 export default function App() {
 
-const ArtistImg = [ZG,SS,ZG,SS,ZG,SS,ZG,SS,ZG,SS,ZG,SS,];
+  const ArtistImg = [ZG, SS, ZG, SS, ZG, SS, ZG, SS, ZG, SS, ZG, SS,];
 
   return (
     <>
@@ -27,13 +27,13 @@ const ArtistImg = [ZG,SS,ZG,SS,ZG,SS,ZG,SS,ZG,SS,ZG,SS,];
         modules={[EffectCards]}
         className="mySwiper"
       >
-      {ArtistImg.map((e)=>{
-        return<>
-        <SwiperSlide>
-          <ArtistCard img={e} />
-        </SwiperSlide>
-        </>
-      })}
+        {ArtistImg.map((e, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <ArtistCard img={e} />
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </>
   );
