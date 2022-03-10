@@ -6,6 +6,9 @@
     transition: background-color 200ms linear;
     z-index: 10;
 }
+.nav-item{
+    position: relative;
+}
 .navbar li{
     font-weight: 400;
     font-size: 1.2rem;
@@ -32,8 +35,21 @@
 .nav-link{
     transition: 0.2s;
 }
+.underline{
+    width: 100%;
+    position: absolute;
+    bottom: 0.5rem;
+    display: none;
+}
+.isActive + .underline{
+    display: block;
+}
+
 
 @media screen and (max-width:768px) {
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.2) !important;
+    }
     .navbar-open{
         background-color: rgba(0, 0, 0, 0.5) !important;
         transition: background-color 200ms linear;

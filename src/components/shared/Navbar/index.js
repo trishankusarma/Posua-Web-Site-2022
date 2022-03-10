@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo from '../../../assets/logo.png'
+import underline from '../../../assets/underline.svg'
 import './style.css'
 function Navbar() {
 
@@ -17,7 +18,7 @@ function Navbar() {
         }
     }
     return (
-        <nav className={"navbar navbar-expand-lg navbar-light bg-light " + (isOpen ? "navbar-open" : "")}>
+        <nav className={"navbar navbar-expand-lg navbar-light " + (isOpen ? "navbar-open" : "")}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'> <span className='posua'>P<img src={logo} alt='logo' />SUA</span></Link>
                 <button className="navbar-toggler" type="button" onClick={(e) => toggleColor(e)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +33,25 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item mx-4">
-                            <NavLink className={"nav-link active " + (location.pathname === '/events' ? 'isActive' : '')} to='/events'>Event</NavLink>
+                            <NavLink className={"nav-link active " + (location.pathname === '/events' ? 'isActive' : '')} to='/events'>Event
+                            </NavLink>
+                            <img src={underline} className='underline' alt='underline' />
                         </li>
                         <li className="nav-item mx-4">
                             <NavLink className={"nav-link active " + (location.pathname === '/sponsors' ? 'isActive' : '')} to='/sponsors'>Sponsors</NavLink>
+                            <img src={underline} className='underline' alt='underline' />
                         </li>
                         <li className="nav-item mx-4">
                             <NavLink className={"nav-link active " + (location.pathname === '/team' ? 'isActive' : '')} to='/team'>Team</NavLink>
+                            <img src={underline} className='underline' alt='underline' />
                         </li>
                         <li className="nav-item mx-4">
                             <NavLink className={"nav-link active " + (location.pathname === '/gallery' ? 'isActive' : '')} to='/gallery'>Gallery</NavLink>
+                            <img src={underline} className='underline' alt='underline' />
                         </li>
                         <li className="nav-item mx-4">
                             <NavLink className={"nav-link active " + (location.pathname === '/artists' ? 'isActive' : '')} to='/artists'>Artists</NavLink>
+                            <img src={underline} className='underline' alt='underline' />
                         </li>
                     </ul>
                 </div>
