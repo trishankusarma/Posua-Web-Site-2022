@@ -7,6 +7,7 @@ import pic5 from "../../../../assets/GalleryImages/2021/p5.jpg"
 import pic6 from "../../../../assets/GalleryImages/2021/p6.jpg"
 import pic7 from "../../../../assets/GalleryImages/2021/p7.jpg"
 import pic8 from "../../../../assets/GalleryImages/2021/p8.jpg"
+import pic9 from "../../../../assets/GalleryImages/2021/p9.jpg"
 
 function Gallery2021() {
   return (
@@ -35,6 +36,9 @@ function Gallery2021() {
         </div>
         <div className="imgage">
           <img src={pic8} alt="" />
+        </div>
+        <div className="imgage REMOVE">
+          <img src={pic9} alt="" />
         </div>
       </div>
     </div>
