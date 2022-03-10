@@ -52,7 +52,7 @@
         
     }
     .navbar-open{
-        background-color: rgba(0, 0, 0, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
         transition: background-color 200ms linear;
     }
     .navbar-brand{
@@ -73,6 +73,9 @@
         color: #ED1B24 !important;
         opacity: 1;
         font-size: larger;
+    }
+    .isActive + .underline{
+        display: none;
     }
 }
 
