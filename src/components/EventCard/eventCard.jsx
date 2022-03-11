@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./eventCardStyles.css";
-import viewMore from "../../assets/view more.svg";
+import viewMore from "../../assets/view more.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import BgImg from "../../assets/EventBg.svg";
 
 const EventCard = (props) => {
-  const [expand, setExpand] = useState(props.expand);
+  const [expand, setExpand] = useState(props.expand); // state for handling card scalling
   return (
     <div className="card-container">
       <div
@@ -14,7 +13,7 @@ const EventCard = (props) => {
           expand === 2 ? "card-expand2" : ""
         }`}
         style={{
-          background: `url(${props.BgImg}) right top no-repeat`,
+          background: `url(${props.bgImg}) center no-repeat`,
           backgroundSize: "cover",
         }}
         onClick={() => {
@@ -25,13 +24,19 @@ const EventCard = (props) => {
       >
         <FontAwesomeIcon
           icon={faXmark}
-          className={`cross ${expand ? "cross-active" : ""}`}
+          className={`cross ${expand ? "cross-active" : ""} ${
+            expand === 2 ? "cross-active-2" : ""
+          }`}
           onClick={() => {
-            props.changeActive(false);
+            props.changeActive(false); // special function to handle child to parent state handler
             setExpand(1);
           }}
         />
-        <div className={` ${!(expand === 2 || expand === false) ? "details-active" : "details"}`}>
+        <div
+          className={` ${
+            !(expand === 2 || expand === false) ? "details-active" : "details"
+          }`}
+        >
           <h2>{props.name1}</h2>
           <p>{props.name2}</p>
         </div>
@@ -69,18 +74,8 @@ EventCard.defaultProps = {
   name1: "name",
   name2: "name2",
   key: "1",
-  BgImg: BgImg,
+  bgImg: "",
   date: "March 26",
-  content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            alias repellat facilis ducimus, a maxime recusandae error soluta
-            libero inventore autem temporibus similique blanditiis iure! Nihil
-            provident soluta atque temporibus libero neque, voluptatem similique
-            quibusdam incidunt, molestias laudantium itaque explicabo,
-            architecto aut! Nihil distinctio dolorem reprehenderit iusto
-            inventore tempore odit laborum eveniet consequatur ex ipsum, animi
-            perspiciatis adipisci, saepe ipsa, architecto nostrum repudiandae
-            illum minima veritatis velit nobis magni voluptate? Pariatur
-            perspiciatis cumque officia natus vero obcaecati nam. Autem,
-            suscipit!`,
+  content: ``,
 };
 export default EventCard;

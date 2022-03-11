@@ -49,6 +49,7 @@
     transform: translateX(-50%) rotate(180deg);
 }
 .accordion p{
+    font-size: 1.1rem;
     margin-bottom: 0;
     width: 75%;
     margin: auto;
@@ -65,7 +66,9 @@
 .accordion-active .content{
     max-height: 300px;
 }
-
+.acc-bg{
+    background: url(../../../assets/bg.png);
+}
 @media screen and (max-width:768px) {
     .accordion button{
         display: flex;

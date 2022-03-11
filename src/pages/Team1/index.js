@@ -3,8 +3,8 @@ import './style.css'
 import japi from '../.././assets/japi.png'
 import frame from '../.././assets/frame.png'
 import team1 from '../.././assets/team1.png'
-import line1 from '../.././assets/line1.png'
-import line2 from '../.././assets/line2.png'
+// import line1 from '../.././assets/line1.png'
+// import line2 from '../.././assets/line2.png'
 
 
 export default function Team1() {
@@ -43,7 +43,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -57,7 +57,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -84,7 +84,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -98,7 +98,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -111,7 +111,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -124,7 +124,7 @@ export default function Team1() {
               <div className="image">
                 <img src={frame} alt="" />
               </div>
-              <div class="frame-content">
+              <div className="frame-content">
                 <span className="frame-name">Graphic Designer
                   <br />
                   <span className="frame-role">Graphic Designer</span></span>
@@ -138,7 +138,7 @@ export default function Team1() {
 
 
       </div>
-    {/* </div> */}
-  </>
-)
+      {/* </div> */}
+    </>
+  )
 }
