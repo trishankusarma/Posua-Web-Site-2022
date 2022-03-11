@@ -3,7 +3,6 @@ import "./eventCardStyles.css";
 import viewMore from "../../assets/view more.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import BgImg from "../../assets/EventBg.svg";
 
 const EventCard = (props) => {
   const [expand, setExpand] = useState(props.expand); // state for handling card scalling
@@ -14,7 +13,7 @@ const EventCard = (props) => {
           expand === 2 ? "card-expand2" : ""
         }`}
         style={{
-          background: `url(${props.BgImg}) right top no-repeat`,
+          background: `url(${props.bgImg}) center no-repeat`,
           backgroundSize: "cover",
         }}
         onClick={() => {
@@ -25,13 +24,19 @@ const EventCard = (props) => {
       >
         <FontAwesomeIcon
           icon={faXmark}
-          className={`cross ${expand ? "cross-active" : ""} ${expand===2 ? "cross-active-2" : ""}`}
+          className={`cross ${expand ? "cross-active" : ""} ${
+            expand === 2 ? "cross-active-2" : ""
+          }`}
           onClick={() => {
             props.changeActive(false); // special function to handle child to parent state handler
             setExpand(1);
           }}
         />
-        <div className={` ${!(expand === 2 || expand === false) ? "details-active" : "details"}`}>
+        <div
+          className={` ${
+            !(expand === 2 || expand === false) ? "details-active" : "details"
+          }`}
+        >
           <h2>{props.name1}</h2>
           <p>{props.name2}</p>
         </div>
@@ -69,8 +74,8 @@ EventCard.defaultProps = {
   name1: "name",
   name2: "name2",
   key: "1",
-  BgImg: BgImg,
+  bgImg: "",
   date: "March 26",
-  content: `The most awaited and anticipated event of POSUA is Manthan,in which the fabulous performance of renowned performers of Assam rejuvenates everyone’s spirit in the campus.Distinguished performers Zubeen Garg,Manash Robin,Dikshu,Srimanta Shekhar have already graced the stage of Manthan with their presence and exuberant performance in the past years.This year too, NITS Family is excited for the extravagant Manthan under POSUA’22.`,
+  content: ``,
 };
 export default EventCard;

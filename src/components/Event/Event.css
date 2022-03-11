@@ -39,7 +39,7 @@
   background: url(../.././assets/bg.png);
   width: 100vw;
 }
-.main-section-large{
+.main-section-large {
   height: 200vh;
   z-index: 1;
   background: url(../.././assets/bg.png);
@@ -50,7 +50,7 @@
   /* margin: auto; */
   height: 100%;
 }
-.slick-slider{
+.slick-slider {
   width: 100vw;
   margin: auto;
   justify-content: center;
@@ -239,12 +239,12 @@
   .item:nth-of-type(4) {
     display: none;
   }
-  .slick-slider{
+  .slick-slider {
     width: 90vw;
     margin: auto;
   }
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .top-section .events {
     position: relative;
     left: 4px;
