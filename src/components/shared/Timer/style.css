@@ -78,6 +78,7 @@ div#timer {
   
     div#timer {
       width: 95%;
+      padding: 2vh;
     }
   
     div#timer div.timer-limit {
@@ -86,8 +87,8 @@ div#timer {
     }
     
     div#timer div.timer-int {
-      padding: 0 3vh;
-      margin: 1vh 2vh 0 0;
+      padding: 0;
+      /* margin: 1vh 2vh 0 0; */
     }
   
     div.timer-int div.timer-int-value {
