@@ -49,6 +49,7 @@
     transform: translateX(-50%) rotate(180deg);
 }
 .accordion p{
+    font-size: 1.1rem;
     margin-bottom: 0;
     width: 75%;
     margin: auto;
