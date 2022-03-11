@@ -18,7 +18,15 @@
   align-content: center;
   position: absolute;
   left: 130px;
-  top: 400px;
+  top: 100px;
+}
+.top-section .event_content{
+  width: 46%;
+  margin: 200px 140px;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color:brown
 }
 .top-section .dance-bg {
   background: url("../../assets/Rectangle\ 18.svg") no-repeat;

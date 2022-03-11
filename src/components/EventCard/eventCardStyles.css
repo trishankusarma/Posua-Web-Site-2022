@@ -186,6 +186,9 @@
   left: 330px;
   font-size: 20px;
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.336);
+  padding: 1rem;
+  line-height: 2rem;
 }
 .contents .details-max {
   position: absolute;

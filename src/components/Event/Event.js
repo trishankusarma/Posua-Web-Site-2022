@@ -169,8 +169,15 @@ const Event = () => {
   return (
     <>
       <div className="top-section">
-        <div className="events"></div>
+        <div className="events">
+        </div>
         <div className="dance-bg"></div>
+        <div className="event_content">
+          
+          POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions. In this perfect period, POSUA brings a plethora of events to celebrate the cultural splendour of ‘Bor Axom’.
+          Protidhwoni reverberates the campus with zestful spirit of ‘Husori dols; ‘Bordoisila’ would leave you in awe with the scintillating performance of ‘gabhorus’ in golden silk; ‘Krishti’ will dive you through the diverse culture and traditions of Barak and  Brahmaputra Valley; ‘Gunjan’ will stir your soul with rhythms and vibrance of open ‘Husori’; ‘Parikrama’ would take you to the ethnic wonders woven in the taat xaal of Axomiya xipinis; ‘Abhijatri’ have the diversities of this wonderful cultural land marching together in unity; ‘RongGhar’ Bakori awaits for the indigenous games and fun activities, taking us back to the cultural roots; ‘Ankuran’ blends the innocence of kids with the richness of culture with joyful bihu moves and glee in their performance; ‘RongTulika’ brings out the imagination of young minds on canvas filled with bright colours; ‘Borhomthuri’ the annual souvenir assembles enthralling literally pieces reflecting the literary skills of youth; the campus anticipates for ‘Manthan’ to sway to the awe-bound performance of amazing artists.
+ 
+       </div>
       </div>
       <div className={active ? "main-section-large" : "main-section"}>
         <div className={active ? "carousel-inactive" : "carousel"}>

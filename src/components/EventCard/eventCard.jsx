@@ -62,7 +62,9 @@ const EventCard = (props) => {
             <p>{props.date}</p>
             <h2>{props.name1}</h2>
           </div>
-          <div className="para">{props.content}</div>
+          <div className="para">
+             {props.content}
+          </div>
         </div>
       </div>
       <div className={`${expand ? "" : "card-bg"}`}></div>
