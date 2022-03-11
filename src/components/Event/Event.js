@@ -73,7 +73,7 @@ const events = [
   {
     name1: "Krishti",
     name2: "Cultural Show",
-    content: `Celebrating the land with a rich and diverse culture and traditions perfectly blended, Posua introduces Kristhi - a golden opportunity to peep into the beautiful creation of time. It's a chance to witness the intertwining cultures of the people who had come here ages ago and made this land dear home, resulting in a greater majestic society which is the amalgamation of these cultures. Be it Barak or Brahmaputra, we all are entangled with golden threads in a beautiful tapestry.`,
+    content: `Celebrating the land with a rich and diverse culture and traditions perfectly blended, Posua introduces Krishti - a golden opportunity to peep into the beautiful creation of time. It's a chance to witness the intertwining cultures of the people who had come here ages ago and made this land dear home, resulting in a greater majestic society which is the amalgamation of these cultures. Be it Barak or Brahmaputra, we all are entangled with golden threads in a beautiful tapestry.`,
     bgImg: Kristhi,
   },
   {
