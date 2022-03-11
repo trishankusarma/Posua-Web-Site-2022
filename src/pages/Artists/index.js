@@ -16,7 +16,7 @@ const Artist = () => {
         </div>
         <ArtistCard img={PriyankaB} />
       </div>
-      <img src={Hr} alt=" a line" style={{ marginLeft: "1%" }} />
+      <img src={Hr} alt=" a line" style={{ marginLeft: "10%" }} />
       <div className="prev_artists">
         <div className="artist_text">
           <h1>Artists in previous years</h1>
