@@ -386,11 +386,12 @@ button {
 
   .HeaderSection{
     margin-top: 100px;
+    margin-bottom: 7rem;
   }
 
   .cover1 {
-    height: 300vh;
-    padding-top: 20px;
+    height: 325vh;
+    padding-top: 7rem;
   }
 
   .REMOVE{
@@ -422,11 +423,24 @@ button {
   }
 }
 
+@media (max-width: 395px){
+
+  .cover1 {
+    height: 335vh;
+    padding-top: 10rem;
+  }
+  .HeaderSection {
+    margin-bottom: 8.5rem;
+}
+
+}
+
 
 @media(max-width: 380px){
 
   .cover1{
-    height: 330vh;
+    height: 345vh;
+    padding-top: 4rem;
   }
 
   .GallerySubHeader {
@@ -436,6 +450,7 @@ button {
   .HeaderSection{
     position: relative;
     top: 60px;
+    margin-bottom: 1rem;
   }
 
   
@@ -457,8 +472,12 @@ button {
 
 @media(max-height: 668px){
   .cover1{
-    height: 373vh;
+    height: 385vh;
+    padding-top: 4rem;
   }
+  .HeaderSection {
+    margin-bottom: 2rem;
+}
 }
 
 
