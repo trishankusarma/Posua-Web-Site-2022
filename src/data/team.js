@@ -25,6 +25,14 @@ const teams = [
     },
 
     {
+        name : "Dr. Pranjit Barman" , 
+        role : "Mentor" , 
+        phoneNo : "+919435374128" , 
+        email : "email" ,
+        img : c5
+    } ,
+
+    {
         name : "Prof. Mokaddes Ali Ahmed" , 
         role : "President" , 
         phoneNo : "phoneNo" , 
@@ -45,64 +53,106 @@ const teams = [
         role : "Vice President" , 
         phoneNo : "phoneNo" , 
         email : "malayaduttaborah@gmail.com" ,
-        img : c2
+        img : c4
+    } ,
+
+
+    {
+        name : "Debajit Bora" , 
+        role : "Convenor" , 
+        phoneNo : "6000364669" , 
+        email : "debajitbora1999@gmail.com" ,
+        img : c6
     } ,
 
     {
-        name : "Dr. Pranjit Barman" , 
-        role : "Mentor" , 
-        phoneNo : "+919435374128" , 
-        email : "email" ,
-        img : c2
+        name : "Sonjyoti Nath" , 
+        role : "Coordinator" , 
+        phoneNo : "8133094439" , 
+        email : "nsonjyoti@gmail.com" ,
+        img : c8
     } ,
 
     {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
+        name : "Arindam Kharghoria" , 
+        role : "Coordinator" , 
+        phoneNo : "8638509919" , 
+        email : "arindam_ug@civil.nits.ac.in" ,
+        img : c7
     } ,
 
-    {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
-    } ,
+   
 
     {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
+        name : "Jyotirmoy Deka" , 
+        role : "Treasurer" , 
+        phoneNo : "7896107708" , 
+        email : "jyotirmoydeka05@gmail.com" ,
+        img : c9
     } ,
 
-    {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
-    } ,
+    
 
     {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
-    } ,
+        name : "Monjita Baruah " , 
+        role : "Executive Head" , 
+        phoneNo : "9706869200" , 
+        email : "monjita_ug@ece.nits.ac.in " ,
+        img : c11
+    },
+
 
     {
-        name : "name" , 
-        role : "role" , 
-        phoneNo : "phoneNo" , 
-        email : "email" ,
-        img : c2
+        name : "Akash Hazarika" , 
+        role : "Executive Head" , 
+        phoneNo : "9101754334" , 
+        email : "akashhazarika2898@gmail.com" ,
+        img : c10
+    } ,
+
+    
+
+    {
+        name : "Bikashjyoti Das" , 
+        role : "Executive Head" , 
+        phoneNo : "8638574294" , 
+        email : "bikashjyotidas123@gmail.com" ,
+        img : c12
+    },
+
+    {
+        name : "Kamakhya Prasad Sut" , 
+        role : "Executive Head" , 
+        phoneNo : "8638850004" , 
+        email : "sutkamakhyaprasad33@gmail.com" ,
+        img : c13
+    },
+
+    {
+        name : "Rishiraj Paul Chowdhury" , 
+        role : "Marketing Head" , 
+        phoneNo : "9706262131" , 
+        email : "hrishipaul936@gmail.com" ,
+        img : c15
+    },
+
+    {
+        name : "Nitesh Pandey" , 
+        role : "Marketing Head" , 
+        phoneNo : "8011648293" , 
+        email : "niteshpandey735@gmail.com" ,
+        img : c14
+    },
+
+    {
+        name : "Priyangshu Goswami " , 
+        role : "Marketing Head" , 
+        phoneNo : "7002140341" , 
+        email : "priyangshugoswami1999@gmail.com " ,
+        img : c16
     }
+
+    
 ]
 
 export default teams;

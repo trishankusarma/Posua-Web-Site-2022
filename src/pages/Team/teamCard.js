@@ -4,7 +4,7 @@ import './style.css'
 
 const teamCard = ({ type ,  img,  name , role,  phoneNo , email }) => {
   
-   const alligned_class = [ "left-card" , "right-card" , "mid-card"  ]
+   const alligned_class = [ "left-card" , "right-card"]
 
    return (
      <div className='cards'>
