@@ -8,13 +8,13 @@
     bottom: -10%;
     width: 100%;
     height: auto;
-    z-index: 2;
+    z-index: 3;
 }
 .cover .tree{
     height: 100%;
     position: absolute;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 .cover .nasoni{
     position: absolute;
@@ -30,7 +30,7 @@
     top: 10%;
     width: 300px;
     z-index: 2;
-    animation: posua 1s ease-in;
+    animation: posua 1.5s ease-in;
 }
 .cloud1{
     position: absolute;

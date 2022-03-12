@@ -11,8 +11,8 @@ function Footer() {
                         <h3>
                             <span>Contacts</span>
                         </h3>
-                        <p>Name +91 1234567890</p>
-                        <p>Name +91 1234567890</p>
+                        <p>Arindam Khargaria +91 8638509919</p>
+                        <p>Debajit Bora +91 6000364669</p>
                     </div>
                     <div className='col-md-3 col-lg-3 col-12 mt-md-0 mt-3'>
                         <h3>
@@ -24,8 +24,9 @@ function Footer() {
                         <h3>
                             <span>Social</span>
                         </h3>
-                        <a href='/'><i className="bi bi-instagram"></i> Instagram</a>
-                        <a href='/'><i className="bi bi-facebook"></i> Facebook</a>
+                        <a href='https://www.instagram.com/posua_nits/'><i className="bi bi-instagram"></i> Instagram</a>
+                        <a href='https://www.facebook.com/nitsposua/'><i className="bi bi-facebook"></i> Facebook</a>
+
                     </div>
                     <div className='col-md-3 col-lg-3 col-12 mt-md-0 mt-3'>
                         <h3>

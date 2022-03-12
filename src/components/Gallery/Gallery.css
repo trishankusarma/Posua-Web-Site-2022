@@ -8,7 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .cover1 {
-  height: 220vh;
+  height: 255vh;
   background-color: #fff9ed;
   background-image: url(../../assets/bg.png);
   padding-top: 2rem;
@@ -139,7 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 70%;
+  width: 85%;
   height: 80vh;
   margin: 100px auto 0;
   margin-top: 0;
@@ -148,11 +148,14 @@ body {
 
 .bloc-tabs {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .ContentHeader {
-  width: 292px;
-  display: flex;
+  display: none;
   align-self: center;
   font-size: 30px;
   font-family: "Philosopher", sans-serif;
@@ -176,9 +179,10 @@ body {
 }
 
 .active-tabs {
-  background: white;
+  color: #554f39;
+  background-image: url(../../assets/bg.png);
   border-radius: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
 button {
@@ -217,7 +221,8 @@ button {
 .borderImage {
   position: absolute;
   top: 0%;
-  left: 28.25%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 450px;
   height: 50px;
   margin: 0 auto;
@@ -232,6 +237,8 @@ button {
   width: 100%;
   margin-top: 8rem;
 }
+
+
 
 .gallery {
   position: relative;
@@ -274,6 +281,10 @@ button {
 }
 /* zoom-effect */
 
+.HIDE{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .gallery {
@@ -298,7 +309,7 @@ button {
 
   .GalleryHeading {
     font-size: 3.75rem;
-    width: 60%;
+    width: 63%;
   }
 
   .GallerySubHeader {
@@ -364,13 +375,30 @@ button {
 }
 
 @media (max-width: 415px) {
+
+  .buttonTabs-row-1{
+    width: 95vw;
+  }
+
+  .buttonTabs-row-2{
+    width: 85vw;
+  }
+
+  .HeaderSection{
+    margin-top: 100px;
+  }
+
   .cover1 {
-    height: 290vh;
+    height: 300vh;
     padding-top: 20px;
   }
 
   .REMOVE{
     display: none;
+  }
+
+  .HIDE{
+    display: unset;
   }
 
   .headerSubSection {
@@ -382,7 +410,7 @@ button {
   }
 
   .tabs {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .gallery {
@@ -397,6 +425,10 @@ button {
 
 @media(max-width: 380px){
 
+  .cover1{
+    height: 330vh;
+  }
+
   .GallerySubHeader {
     font-size: 1.3rem;
 }
@@ -404,6 +436,11 @@ button {
   .HeaderSection{
     position: relative;
     top: 60px;
+  }
+
+  
+  .tabs {
+    font-size: 20px;
   }
   
 
@@ -416,5 +453,12 @@ button {
     font-size: 2.5rem;
  }
 
-
 }
+
+@media(max-height: 668px){
+  .cover1{
+    height: 373vh;
+  }
+}
+
+

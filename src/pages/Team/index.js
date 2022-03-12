@@ -46,9 +46,7 @@ export default function team() {
 
 
           <p className="GallerySubHeader mt-5">
-            A person filled with enthusiasm: such as. a : one who is ardently
-            attached to a cause, object, or pursuit a sports car enthusiast. b : one
-            who tends to become ardently absorbed in an interest.
+             With the arrival of spring and the departure of winter days, our Mother Nature expresses her joy of welcoming the calming rejuvenation via greenery and brightness all around her. Our Spring Fest, Posua is that venture which nurtures this celebration. This spree witnesses everyone coming together to work as a team, be it the students, the faculty members and the entire fraternity of NIT Silchar into its circle of gaiety and also ensures of breaking all the barriers among the crowd and bringing everyone together.
           </p>
           <hr className='GalleryHeaderBorder' />
           <div className="GalleryHeaderBorderIconSection">
