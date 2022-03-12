@@ -7,24 +7,24 @@
 .prev_artists,
 .upcomming_artists {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
+}
+.artist_upcomming {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .artist_text {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  width: 100%;
+  margin-bottom: 2%;
 }
 .artist_text h1 {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  width: 40%;
   background: -webkit-linear-gradient(
     100deg,
     rgba(255, 217, 168, 1),
@@ -32,4 +32,117 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.add_details {
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add_details .inner_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  width: 50%;
+  margin: 2rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.555);
+  box-shadow: 0.5px 2px 5px #c1c1c1;
+}
+.add_details .inner_text .text_btn {
+  padding: 1vh 1vh 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add_details .inner_text h5 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.symbol {
+  font-size: 0.7rem;
+}
+.add_details .inner_text img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+.hr_line {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.details {
+  position: relative;
+  height: 50%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+  flex-direction: column;
+}
+.details .assamese {
+  padding: 1rem;
+  text-align: start;
+  line-height: 2.3;
+  word-spacing: 1.5px;
+}
+.details .eng {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: start;
+  line-height: 2;
+  word-spacing: 1.5px;
+}
+.details img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.artist_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .artist_upcomming {
+    padding-top: 3rem;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .artist_text {
+    margin: 0;
+  }
+  .add_details .inner_text {
+    width: 100%;
+  }
+  .artist_container {
+    grid-template-columns: 1fr;
+  }
+  .add_details {
+    margin-top: 5rem;
+    margin: 0;
+  }
+  .details{
+    width: 90%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .add_details {
+    margin-top: 8rem;
+    }
 }

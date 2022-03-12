@@ -6,8 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import ZG from "../../assets/ZG.svg";
-import SS from "../../assets/SimantaS.svg";
-
+import DS from "../../assets/artists card (1).svg";
+import NA from "../../assets/artists card.svg";
+import SS from "../../assets/artists card (2).svg";
+import MR from "../../assets/artists card (3).svg";
 
 import "./styles.css";
 
@@ -16,8 +18,7 @@ import { EffectCards } from "swiper";
 import ArtistCard from "../ArtistCard";
 
 export default function App() {
-
-  const ArtistImg = [ZG, SS, ZG, SS, ZG, SS, ZG, SS, ZG, SS, ZG, SS,];
+  const ArtistImg = [ZG, DS, NA, SS, MR];
 
   return (
     <>
@@ -32,7 +33,7 @@ export default function App() {
             <SwiperSlide key={index}>
               <ArtistCard img={e} />
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </>

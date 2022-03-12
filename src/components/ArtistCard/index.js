@@ -12,13 +12,15 @@ export default ArtistCard;
 
 const ArtistImg = styled.img`
   height: 400px;
-  position: absolute;
   left: 12%;
   top: 4%;
 `;
 
 const CardWrapper = styled.div`
-  position: relative;
-  height: 100vh;
+  /* cursor: url("../assets/swipe_left_right_full_white.png"), auto; */
+  /* height: 100vh; */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
