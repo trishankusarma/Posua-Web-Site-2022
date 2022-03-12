@@ -183,7 +183,7 @@
     }
 }
 
-@media screen and (max-height : 750px) {
+@media screen and (max-width : 385px) {
     .cover .posua{
         width: 250px !important;
     }
