@@ -1,3 +1,7 @@
+.main {
+  background: url(../.././assets/bg.png);
+}
+
 .top-section {
   height: 80vh;
   width: 100vw;
@@ -5,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: url(../.././assets/bg.png);
   box-sizing: content-box;
 }
 .top-section .events {
@@ -20,6 +23,18 @@
   left: 130px;
   top: 100px;
 }
+.top-section .events-max {
+  background: url("../../assets/EVENTS.svg") no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  align-content: center;
+  position: absolute;
+  left: 15vw;
+  top: 40vh;
+}
 .top-section .event_content {
   width: 46%;
   margin: 200px 140px;
@@ -27,6 +42,9 @@
   line-height: 1.5rem;
   font-size: 0.9rem;
   color: brown;
+}
+.top-section .event_content-inactive {
+  display: none;
 }
 .top-section .dance-bg {
   background: url("../../assets/Rectangle\ 18.svg") no-repeat;
@@ -44,8 +62,9 @@
   height: 100vh;
   /* margin-bottom: 50vh; */
   z-index: 1;
-  background: url(../.././assets/bg.png);
   width: 100vw;
+  position: relative;
+  top: -10vh;
 }
 .main-section-large {
   height: 200vh;
@@ -239,13 +258,19 @@
   .top-section .events {
     position: relative;
     left: 4px;
-    top: 100px;
+    top: 3rem;
+    width: 200px;
+  }
+  .top-section .events-max {
+    position: relative;
+    left: 4px;
+    top: 3rem;
     width: 200px;
   }
   .top-section .dance-bg {
     position: relative;
     left: 4px;
-    top: -20px;
+    top: -6vh;
     width: 400px;
   }
   .item:nth-of-type(1) {
@@ -271,12 +296,16 @@
   }
   .top-section .event_content {
     position: absolute;
-    top: 140px;
+    top: 15rem;
     left: -120px;
     width: 90%;
     font-size: 0.8rem;
   }
   .top-section {
     height: 120vh;
+  }
+  .main-section {
+    position: relative;
+    top: 10vw;
   }
 }
