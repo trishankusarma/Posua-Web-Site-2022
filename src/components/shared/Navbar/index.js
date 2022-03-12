@@ -35,7 +35,7 @@ function Navbar() {
                             </NavLink>
                         </li>
                         <li className="nav-item mx-4">
-                            <NavLink className={"nav-link active " + (location.pathname === '/events' ? 'isActive' : '')} to='/events'>Event
+                            <NavLink className={"nav-link active " + (location.pathname === '/events' ? 'isActive' : '')} to='/events'>Events
                             </NavLink>
                             <img src={underline} className='underline' alt='underline' />
                         </li>
