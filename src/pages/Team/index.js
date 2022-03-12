@@ -409,14 +409,12 @@ export default function team() {
 <img src={c2} alt="" />
 <img src={frame} alt="" />
 <img src={frame} alt="" />
-
 <img src={frame} alt="" />
 <img src={frame} alt="" />
 <img src={frame} alt="" />
 <img src={frame} alt="" />
 <img src={frame} alt="" />
 <img src={frame} alt="" />
-
 <img src={frame} alt="" /> 
 <img src={frame} alt="" />
 <img src={frame} alt="" />

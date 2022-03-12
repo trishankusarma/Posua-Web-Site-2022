@@ -6,9 +6,7 @@ function GallerySubHeader() {
   return (
     <>
       <p className="GallerySubHeader">
-        A person filled with enthusiasm: such as. a : one who is ardently
-        attached to a cause, object, or pursuit a sports car enthusiast. b : one
-        who tends to become ardently absorbed in an interest.
+      Photographs are memories frozen in time. To cherish the memories made during all the editions of Posua, we have collected and immortalised them as photographs. The images here are intended to take the viewers in a trip down Posua's memory lane, and allow everyone to enjoy and bask in the warmth of mesmerizing gaiety, an exhilaration of fun activities that constitute Posua.
       </p>
       <hr className='GalleryHeaderBorder'/>
       <div className="GalleryHeaderBorderIconSection">

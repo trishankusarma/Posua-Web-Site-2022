@@ -1,5 +1,5 @@
 .top-section {
-  height: 70vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 .top-section .events {
   background: url("../../assets/EVENTS.svg") no-repeat;
-  /* background-size: contain */
+  background-size: contain;
   height: 160px;
   width: 300px;
   display: inline-block;
@@ -18,10 +18,19 @@
   align-content: center;
   position: absolute;
   left: 130px;
-  top: 400px;
+  top: 100px;
+}
+.top-section .event_content {
+  width: 46%;
+  margin: 200px 140px;
+  text-align: justify;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: brown;
 }
 .top-section .dance-bg {
   background: url("../../assets/Rectangle\ 18.svg") no-repeat;
+  background-size: contain;
   height: 100%;
   width: 600px;
   display: inline-block;
@@ -38,16 +47,21 @@
   background: url(../.././assets/bg.png);
   width: 100vw;
 }
-.main-section-large{
+.main-section-large {
   height: 200vh;
   z-index: 1;
   background: url(../.././assets/bg.png);
   width: 100vw;
 }
 .carousel {
-  width: 90vw;
-  margin: auto;
+  width: 100vw;
+  /* margin: auto; */
   height: 100%;
+}
+.slick-slider {
+  width: 100vw;
+  margin: auto;
+  justify-content: center;
 }
 .carousel-inactive {
   display: none;
@@ -203,19 +217,36 @@
 .item-inactive {
   opacity: 0;
 }
+
+@media only screen and (max-width: 700px) {
+  .top-section .dance-bg {
+    position: relative;
+    left: 4px;
+    top: 100px;
+    width: 400px;
+  }
+  .top-section .event_content {
+    position: absolute;
+    top: 120px;
+    left: -120px;
+    width: 90%;
+  }
+  .top-section {
+    height: 150vh;
+  }
+}
 @media only screen and (max-width: 500px) {
   .top-section .events {
     position: relative;
-    left: 23px;
-    top: 66px;
+    left: 4px;
+    top: 100px;
+    width: 200px;
   }
   .top-section .dance-bg {
-    height: 90%;
-    width: 594px;
-    display: inline-block;
-    position: absolute;
-    right: -125px;
-    top: 295px;
+    position: relative;
+    left: 4px;
+    top: -20px;
+    width: 400px;
   }
   .item:nth-of-type(1) {
     display: none;
@@ -233,5 +264,19 @@
   }
   .item:nth-of-type(4) {
     display: none;
+  }
+  .slick-slider {
+    width: 90vw;
+    margin: auto;
+  }
+  .top-section .event_content {
+    position: absolute;
+    top: 140px;
+    left: -120px;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  .top-section {
+    height: 120vh;
   }
 }

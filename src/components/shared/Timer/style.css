@@ -64,12 +64,21 @@ div#timer {
     font-size: 7vh;
     color: #7D776B;
   }
+
+  .tag{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    padding: 0 5vh;
+  }
   
   
   @media screen and (max-width : 1000px) {
   
     div#timer {
       width: 95%;
+      padding: 2vh;
     }
   
     div#timer div.timer-limit {
@@ -78,8 +87,8 @@ div#timer {
     }
     
     div#timer div.timer-int {
-      padding: 0 3vh;
-      margin: 1vh 2vh 0 0;
+      padding: 0;
+      /* margin: 1vh 2vh 0 0; */
     }
   
     div.timer-int div.timer-int-value {
@@ -101,6 +110,11 @@ div#timer {
   @media screen and (max-width : 700px) {
     .timer-heading h2{
       font-size: 2.5vh;
+    }
+    .tag{
+      padding: 0;
+      text-align: center;
+      flex-direction: column;
     }
   }
   

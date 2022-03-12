@@ -54,11 +54,21 @@ function Timer() {
                                 <div className="timer-int-value"><tt>{interval}</tt></div> {/* Time left in interval */}
                                 <div className="timer-int-label">{timeIntervalName[index]}</div> {/* Interval name */}
                             </div>
-                            {(index < display.length - 1 && ((window.innerWidth < 1000 && index !== 1) || window.innerWidth >= 1000)) && <div className="timer-int-colon">:</div>}
+                            {index < display.length - 1 && <div className="timer-int-colon">:</div>}
 
                         </React.Fragment>
                     )
                 })}
+                <div className='tag'>
+                    <p>
+                        #চেনেহৰ_বতৰা_লৈ_পছোৱা_আহিছে_ঐ<br />
+                        #দশকৰ_পদূলিত_পছোৱাৰ_ভুমুকি
+                    </p>
+                    <p>
+                        #Posua_reviving_exuberance!<br />
+                        #espying_10_years_of_ecstasy
+                    </p>
+                </div>
             </div>
         </div>
     )

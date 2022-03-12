@@ -45,7 +45,7 @@ const datas = [
 
 function Accordion() {
 
-    const [tabIndex, settabIndex] = useState(-1)
+    const [tabIndex, settabIndex] = useState(0)
 
     function openTab(e, index) {
         e.preventDefault()
@@ -63,12 +63,12 @@ function Accordion() {
     }
 
     return (
-        <>
+        <div className='acc-bg py-5'>
             {datas.map((data, index) => (
                 <div key={index} className={"accordion py-3" + (index === tabIndex ? " accordion-active" : "")}>
                     <div className='dropdown'>
-                        <button type='button' className='accordion_button' onClick={(e) => openTab(e, index)}><img src={japi} alt='japi' /><span> {data.heading} </span><img src={japi} alt='japi' /></button>
-                        <img className='arrow' src={arrow} alt='arrow' />
+                        <button type='button' className='accordion_button' onClick={(e) => openTab(e, index)}><img src={japi} alt='japi' /><span> {data.heading} </span><img className='arrow' src={arrow} alt='arrow' /><img src={japi} alt='japi' /></button>
+                        
                     </div>
                     <div className='content'>
                         <p>
@@ -77,7 +77,7 @@ function Accordion() {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 
