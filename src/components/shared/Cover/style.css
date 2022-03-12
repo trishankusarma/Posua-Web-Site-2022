@@ -182,3 +182,18 @@
         top: calc(10% + 210px);
     }
 }
+
+@media screen and (max-height : 750px) {
+    .cover .posua{
+        width: 250px !important;
+    }
+    .cover .nasoni{
+        width: 90%;
+    }
+    .daystogo{
+        width: 80px;
+    }
+    .cover .days{
+        top: calc(10% + 130px);
+    }
+}
