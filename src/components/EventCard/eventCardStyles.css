@@ -37,8 +37,10 @@
   top: 300px;
   padding: 0;
   opacity: 0;
-  height: 100px;
+  height: fit-content;
+  width: fit-content;
   margin-left: 20px;
+  background: rgba(0, 0, 0, 0.349);
 }
 .card .details-active {
   background: url("../../assets/Group\ 27.svg") no-repeat;
@@ -73,14 +75,23 @@
   left: 30px;
 }
 .card .see-more {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   position: relative;
   top: 180px;
-  left: 130px;
+  left: 150px;
   animation: viewMore;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   z-index: 20;
+  width: fit-content;
+  background-color: rgba(255, 217, 168, 0.719);
+  color: rgb(46, 20, 20);
+  border-radius: 5px;
+}
+.card .see-more h1 {
+  padding: 2px 6px;
+  font-size: 24px;
+  font-weight: 700px;
 }
 .card .see-more-inactive {
   display: none;
@@ -126,6 +137,18 @@
     left: 0px;
   }
 }
+@keyframes expand1x {
+  0% {
+    transform: translateY(100px) scale(1.2);
+    position: relative;
+    left: -200px;
+  }
+  100% {
+    transform: translateX(70px) translateY(16rem) scale(1.4);
+    position: relative;
+    left: 0px;
+  }
+}
 @keyframes viewMore {
   0% {
     opacity: 0.5;
@@ -135,7 +158,7 @@
   }
 }
 .card-container .card-expand2 {
-  transform: translateY(150px) scale(1.6) translateX(10px);
+  /* transform: translateY(15rem) scale(1.6) translateX(10px); */
   animation-name: expand2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -146,10 +169,18 @@
 }
 @keyframes expand2 {
   0% {
-    transform: translateY(250px) scale(2) translateX(10px);
+    transform: translateY(8rem) scale(2) translateX(10px);
   }
   100% {
-    transform: translateY(350px) scale(2.6) translateX(10px);
+    transform: translateY(12rem) scale(2.6) translateX(10px);
+  }
+}
+@keyframes expand2x {
+  0% {
+    transform: translateY(-12rem) scale(2) translateX(10px);
+  }
+  100% {
+    transform: translateY(-20rem) scale(2.6) translateX(10px);
   }
 }
 .cross {
@@ -269,6 +300,22 @@
     position: absolute;
     top: 2px;
     left: 40vw;
+  }
+  .card-container .card-expand1 {
+    transform: translateY(12rem) scale(1.2);
+    animation-name: expand1x;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 20;
+  }
+  .card-container .card-expand2 {
+    animation-name: expand2x;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    background-size: cover;
+    opacity: 1;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 350px) {
