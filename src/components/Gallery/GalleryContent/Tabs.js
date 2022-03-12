@@ -7,6 +7,7 @@ import Gallery2016 from "./galleryComponents/Gallery2016";
 import Gallery2015 from "./galleryComponents/Gallery2015";
 import Gallery2014 from "./galleryComponents/Gallery2014";
 import Gallery2013 from "./galleryComponents/Gallery2013";
+import Gallery2012 from "./galleryComponents/Gallery2012";
 import "../Gallery.css";
 import borderImage from "../../../assets/GalleryImages/Group22.png"
 import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
@@ -169,7 +170,7 @@ function Tabs() {
         >
           <h2 className="imageHeader" >Glimpses of {year[8]}</h2>
           <img className="borderImage" src={borderImage} alt="" ></img>
-          <Gallery2014/>
+          <Gallery2012/>
         </div>
       </div>
     </div>
