@@ -1,5 +1,5 @@
 .top-section {
-  height: 70vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -20,13 +20,13 @@
   left: 130px;
   top: 100px;
 }
-.top-section .event_content{
+.top-section .event_content {
   width: 46%;
   margin: 200px 140px;
   text-align: justify;
   line-height: 1.5rem;
   font-size: 0.9rem;
-  color:brown
+  color: brown;
 }
 .top-section .dance-bg {
   background: url("../../assets/Rectangle\ 18.svg") no-repeat;
@@ -217,17 +217,35 @@
 .item-inactive {
   opacity: 0;
 }
+
+@media only screen and (max-width: 700px) {
+  .top-section .dance-bg {
+    position: relative;
+    left: 4px;
+    top: 100px;
+    width: 400px;
+  }
+  .top-section .event_content {
+    position: absolute;
+    top: 120px;
+    left: -120px;
+    width: 90%;
+  }
+  .top-section {
+    height: 150vh;
+  }
+}
 @media only screen and (max-width: 500px) {
   .top-section .events {
     position: relative;
     left: 4px;
-    top: 180px;
+    top: 100px;
     width: 200px;
   }
   .top-section .dance-bg {
     position: relative;
     left: 4px;
-    top: 116px;
+    top: -20px;
     width: 400px;
   }
   .item:nth-of-type(1) {
@@ -251,18 +269,14 @@
     width: 90vw;
     margin: auto;
   }
-}
-@media only screen and (max-width: 700px) {
-  .top-section .events {
-    position: relative;
-    left: 4px;
-    top: 180px;
-    width: 200px;
+  .top-section .event_content {
+    position: absolute;
+    top: 140px;
+    left: -120px;
+    width: 90%;
+    font-size: 0.8rem;
   }
-  .top-section .dance-bg {
-    position: relative;
-    left: 4px;
-    top: 166px;
-    width: 400px;
+  .top-section {
+    height: 120vh;
   }
 }
