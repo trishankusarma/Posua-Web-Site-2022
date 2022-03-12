@@ -21,10 +21,10 @@ function Navbar() {
         <nav className={"navbar navbar-default navbar-expand-lg navbar-light " + (isOpen ? "navbar-open" : "")}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'> <span className='posua'>P<img src={logo} alt='logo' />SUA</span></Link>
-                <button type="button" class="navbar-toggle x collapsed" data-bs-toggle="collapse" onClick={(e) => toggleColor(e)} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" className="navbar-toggle x collapsed" data-bs-toggle="collapse" onClick={(e) => toggleColor(e)} data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ justifyContent: 'flex-end' }}>
                     <ul className="navbar-nav mb-2 mb-lg-0">
