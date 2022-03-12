@@ -35,7 +35,7 @@
 .cloud1{
     position: absolute;
     right: 0;
-    top: 5%;
+    top: 30%;
     animation: cloud1 30s infinite linear;
     z-index: 1;
 
@@ -43,7 +43,7 @@
 .cloud2{
     position: absolute;
     right: 50%;
-    top: 20%;
+    top: 18%;
     animation: cloud2 30s infinite linear;
     z-index: 1;
 
@@ -51,7 +51,7 @@
 .cloud-lg{
     position: absolute;
     right: 10%;
-    top: 20%;
+    top: 5%;
     z-index: 0;
     animation: cloud-lg 40s infinite linear;
 }
@@ -119,7 +119,7 @@
 
 @keyframes cloud-lg {
     from{
-        right: 10%;
+        right: 0%;
         transform: translateX(100%);
     }
     to{
@@ -161,5 +161,24 @@
         top: auto;
         left: 5%;
         bottom: 15vh;
+    }
+    .cloud1{
+        top: 5%;
+    }
+    .cloud2{
+        top: 20%;
+    }
+    .cloud-lg{
+        top: 25%;
+    }
+}
+
+@media screen and (min-width:1368px) {
+    .cover .posua{
+        width: 400px;
+    }
+    .cover .days{
+        font-size: 2.3rem;
+        top: calc(10% + 210px);
     }
 }
