@@ -19,7 +19,7 @@ export default function team() {
     { width: 1200, itemsToShow: 4 },
   ];
 
-  const allign_ment_type = [ 0 , 1, 0 , 1 , 2 , 0, 1 , 0 , 1 , 0 , 1 ];
+  const allign_ment_type = [ 0 , 1, 0 , 1 , 0, 1 , 0 , 1 , 0 , 1, 0, 1, 0, 1, 0, 1 ];
 
   return (
     <>
@@ -44,7 +44,7 @@ export default function team() {
 
         </div>
 
-        <div className="container mt-4">
+        <div className="container">
           {/* row 1 */}
             {
               TeamDetails.map(({ name , role , phoneNo , email , img }, index )=> (

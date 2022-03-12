@@ -1,11 +1,13 @@
-
+body{
+    padding-top: 10em;
+}
 
 .main
 {
     /* background-color: #FFF9ED; */
     background: url(../.././assets/bg.png);
    
-    padding-top: 8em;
+    /* padding-top: 8em; */
 }
 
 .heading{
@@ -14,7 +16,7 @@
   background-color: transparent;
   padding: 0;
   margin: 0;
-  margin-top: 70px;
+  padding-top: 20em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +24,17 @@
 }
 
 .heading-name{
+    margin-top: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* @media screen and(max-width:900px){
+    .heading-name{
+        margin-top: 20em;
+    }
+} */
 
 .team{
     padding-left: 1em;
@@ -44,7 +53,7 @@
 }
 
 .description{
-    font-size: 1.5em;
+    font-size: 1em;
     color: #7D776B;
 }
 
@@ -165,8 +174,19 @@
     padding: 2em 0;
 }
 
+.container{
+    padding: 28em 0 ;
+}
+
+
 @media screen and (min-width: 980px)
 {
+    .heading-name{
+        margin-top: 4em;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     .heading-description{
         padding: 2em 10em;
     }
@@ -175,12 +195,12 @@
         padding: 4em 0 ;
     }
 
-    .cards{
+    /* .cards{
         display: flex;
-    }
+    } */
 
     .left-card, .right-card{
-        width: 50%;
+        width: 100%;
     }
 
     .left-card{
