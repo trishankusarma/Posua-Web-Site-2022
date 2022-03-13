@@ -135,14 +135,19 @@
     margin-top: 5rem;
     margin: 0;
   }
-  .details{
+  .details {
     width: 90%;
     font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .add_details {
     margin-top: 8rem;
-    }
+  }
+}
+.poster {
+  margin: auto;
+  height: 75vh;
+  width: 90%;
 }

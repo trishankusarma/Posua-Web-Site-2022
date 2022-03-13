@@ -7,7 +7,7 @@ import Tezpuria from "../../assets/artist1.svg";
 import PriyankaB from "../../assets/Priyanka.svg";
 import Carousel from "../../components/Carousel";
 import PB from "../../assets/pb.svg";
-import TT from "../../assets/tezpuria thespian 1.svg";
+import TT from "../../assets/tezpuriathespian.svg";
 import HoverIcon from "../../assets/swipe_left_right.png";
 import ZG from "../../assets/ZG.svg";
 import DS from "../../assets/artists card (1).svg";
@@ -35,7 +35,7 @@ const Artist = () => {
         <div className="inner_text">
           <div className="text_btn" onClick={() => setShow(!show)}>
             <img src={Japi} className="japi-animation" alt="" />
-            <h5 style={{textAlign:"center"}}>
+            <h5 style={{ textAlign: "center" }}>
               ADDITIONAL DETAILS{" "}
               <span>
                 <div className="symbol">▼</div>
@@ -48,7 +48,15 @@ const Artist = () => {
       {show && (
         <div className="details">
           <div className="detail_1">
-            <img src={PB} alt="" />
+            {/* <img src={PB} alt="" /> */}
+            <div
+              className="poster"
+              style={{
+                background: `url(${PB}) center no-repeat`,
+                backgroundSize: "contain",
+              }}
+            ></div>
+
             <div className="assamese">
               'পছোৱা'-ৰ উদ্দাম বতাহজাকত উন্মনা এন আই টি শিলচৰবাসী লুইতপৰীয়াৰ
               দেহ-মনক দুগুণে শিহৰিত কৰিবলৈ কোনোবা সুদূৰৰ পৰা ভাঁহি আহিছে 'জুৰ
@@ -77,7 +85,14 @@ const Artist = () => {
             <img src={Hr} alt=" a line" style={{ margin: " 0 auto" }} />
           </div>
           <div className="detail_1">
-            <img src={TT} alt="" />
+            {/* <img src={TT} alt="" /> */}
+            <div
+              className="poster"
+              style={{
+                background: `url(${TT}) center no-repeat`,
+                backgroundSize: "contain",
+              }}
+            ></div>
             <div className="assamese">
               এজাক মৃদু বৰষুণ আৰু চঞ্চলা পছোৱাৰ বোকোচাত ভাঁহি অহা কুলি-কেতেকীৰ
               আপোন-পাহৰা সুৰৰ যোজনাই নিদ্ৰামগ্ন প্ৰকৃতিৰ শীতৰ শেতেলীত বসন্তৰ

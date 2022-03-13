@@ -58,7 +58,7 @@ const EventCard = (props) => {
             alt=""
             style={{ width: "150px" }}
           /> */}
-          <h1>View More</h1>
+          <span>View More</span>
         </div>
         <div className={`${expand === 2 ? "contents" : "content-inactive"}`}>
           <div className="details-max">

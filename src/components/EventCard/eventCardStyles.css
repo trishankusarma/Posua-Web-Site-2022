@@ -88,7 +88,7 @@
   color: rgb(46, 20, 20);
   border-radius: 5px;
 }
-.card .see-more h1 {
+.card .see-more span {
   padding: 2px 6px;
   font-size: 24px;
   font-weight: 700px;
