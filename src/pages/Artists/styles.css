@@ -33,6 +33,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.artist_text img{
+  height: calc(1.375rem + 1.5vw);
+  margin: 0 2rem;
+  
+}
 .add_details {
   width: 100%;
   padding: 0.4rem;
@@ -89,10 +94,13 @@
   width: 70%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   transition: all 1s ease;
   flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
 }
 .details .assamese {
   padding: 1rem;

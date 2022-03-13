@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import japi from '../.././assets/japi.png'
-import frame from '../.././assets/frame.png'
+// import frame from '../.././assets/frame.png'
 import team1 from '../.././assets/team1.png'
 
 import Carousel from 'react-elastic-carousel';
@@ -19,7 +19,7 @@ export default function team() {
     { width: 1200, itemsToShow: 4 },
   ];
 
-  const allign_ment_type = [ 0 , 1, 0 , 1 , 0, 1 , 0 , 1 , 0 , 1, 0, 1, 0, 1, 0, 1 ];
+  const allign_ment_type = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1];
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function team() {
           </div>
 
           <p className="GallerySubHeader mt-5">
-             With the arrival of spring and the departure of winter days, our Mother Nature expresses her joy of welcoming the calming rejuvenation via greenery and brightness all around her. Our Spring Fest, Posua is that venture which nurtures this celebration. This spree witnesses everyone coming together to work as a team, be it the students, the faculty members and the entire fraternity of NIT Silchar into its circle of gaiety and also ensures of breaking all the barriers among the crowd and bringing everyone together.
+            With the arrival of spring and the departure of winter days, our Mother Nature expresses her joy of welcoming the calming rejuvenation via greenery and brightness all around her. Our Spring Fest, Posua is that venture which nurtures this celebration. This spree witnesses everyone coming together to work as a team, be it the students, the faculty members and the entire fraternity of NIT Silchar into its circle of gaiety and also ensures of breaking all the barriers among the crowd and bringing everyone together.
           </p>
           <hr className='GalleryHeaderBorder' />
           <div className="GalleryHeaderBorderIconSection">
@@ -46,12 +46,12 @@ export default function team() {
 
         <div className="container">
           {/* row 1 */}
-            {
-              TeamDetails.map(({ name , role , phoneNo , email , img }, index )=> (
-                
-                  < TeamCard type={ allign_ment_type[index] } name = { name } role = { role } phoneNo = { phoneNo } email = { email } img = { img } />
-              ))
-            }
+          {
+            TeamDetails.map(({ name, role, phoneNo, email, img }, index) => (
+
+              < TeamCard type={allign_ment_type[index]} name={name} role={role} phoneNo={phoneNo} email={email} img={img} />
+            ))
+          }
 
         </div>
 
@@ -68,14 +68,14 @@ export default function team() {
         {/* bottom cards */}
         <Carousel breakPoints={breakPoints} className="bottom-cards">
 
-         {
-           ProfileDetails.map(({ name , role , img })=>(
-               
-              < TeamProfile name = { name } role = { role } img = { img } />
-           ))
-         }
+          {
+            ProfileDetails.map(({ name, role, img }) => (
 
-         
+              < TeamProfile name={name} role={role} img={img} />
+            ))
+          }
+
+
 
           {/* <img src={c1} alt="" />
 <img src={c2} alt="" />
