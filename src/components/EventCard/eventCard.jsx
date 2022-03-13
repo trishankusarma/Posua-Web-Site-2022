@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./eventCardStyles.css";
-import viewMore from "../../assets/view more.png";
+// import viewMore from "../../assets/view more.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,7 +34,9 @@ const EventCard = (props) => {
         />
         <div
           className={` ${
-            !(expand === 2 || expand === false) ? "details-active" : "details"
+            !(expand === 2 || expand === false)
+              ? "details-active"
+              : "eventdetails"
           }`}
         >
           <h2>{props.name1}</h2>
