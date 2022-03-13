@@ -25,7 +25,7 @@
   grid-template-columns: 205px 205px;
   margin: -45px 0 0 5px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .Borhom-main .subsec1 {
     grid-template-columns: 205px;
   }

@@ -18,13 +18,23 @@ const index = () => {
             href="https://drive.google.com/file/d/1ijJLJO2SNS4CX-SAZtFJSC-mKeg7gxMv/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card7} year={2020} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card7}
+              year={2020}
+              name="Borhomthuri"
+              key={2020}
+            />
           </a>
           <a
             href="https://drive.google.com/file/d/17sXVH1QLGPC4uB4OxDTJECIvQb5Lmlei/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card1} year={2015} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card1}
+              year={2015}
+              name="Borhomthuri"
+              key={2015}
+            />
           </a>
         </div>
         <div className="subsec2">
@@ -32,16 +42,26 @@ const index = () => {
             href="https://drive.google.com/file/d/1yGROu16Gu_IjEjDxznBZd5dob_Gf_ddl/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card6} year={2019} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card6}
+              year={2019}
+              name="Borhomthuri"
+              key={2019}
+            />
           </a>
           <div className="bor-item-center">
-            <HexagonCard bgImg={Card4} />
+            <HexagonCard bgImg={Card4} key="center" />
           </div>
           <a
             href="https://drive.google.com/file/d/1ajRjjvoH8hCjXx0j5hKPdAMoJ3CykjDF/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card2} year={2016} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card2}
+              year={2016}
+              name="Borhomthuri"
+              key={2016}
+            />
           </a>
         </div>
         <div className="subsec3">
@@ -49,13 +69,23 @@ const index = () => {
             href="https://drive.google.com/file/d/1cuNVBXH3Zpxm_pGASs0kKmzcv7KGILbS/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card5} year={2018} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card5}
+              year={2018}
+              name="Borhomthuri"
+              key={2018}
+            />
           </a>
           <a
             href="https://drive.google.com/file/d/1j2WOPZXNL31CqiUylghfRh8jQObq2NDq/view?usp=sharing"
             className="bor-item"
           >
-            <HexagonCard bgImg={Card3} year={2017} name="Borhomthuri" />
+            <HexagonCard
+              bgImg={Card3}
+              year={2017}
+              name="Borhomthuri"
+              key={2017}
+            />
           </a>
         </div>
       </div>
