@@ -233,10 +233,22 @@
     transform: translateY(-50px) translateX(1040px) scale(1.1);
   }
 }
+@keyframes card4x {
+  0% {
+    position: relative;
+    transform: translateX(850px) translateY(-200px);
+  }
+  50% {
+    transform: translateY(-50px) translateX(850px);
+  }
+  100% {
+    transform: translateY(-50px) translateX(850px) scale(1.1);
+  }
+}
 .item-inactive {
   opacity: 0;
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1275px) {
   .top-section .dance-bg {
     position: relative;
     left: 55vw;
@@ -250,6 +262,14 @@
     width: 50%;
     font-size: 0.8rem;
   }
+  .item:nth-of-type(4) {
+    position: relative;
+    animation-name: card4x;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
 }
 @media only screen and (max-width: 700px) {
   .top-section .dance-bg {
@@ -260,12 +280,12 @@
   }
   .top-section .event_content {
     position: absolute;
-    top: 120px;
+    top: 260px;
     left: -120px;
     width: 90%;
   }
   .top-section {
-    height: 150vh;
+    height: 120vh;
   }
 }
 
