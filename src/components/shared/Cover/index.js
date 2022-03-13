@@ -48,6 +48,11 @@ function Cover() {
             if (displayList.length === 1) clearInterval(timerInt);
         }, 1000);
 
+        const posua = document.getElementsByClassName('posua')
+        posua[2].addEventListener("animationend", function () {
+            posua[2].style.zIndex = 3
+        }, false)
+
         return () => clearInterval(timerInt);
     }, []);
     return (
