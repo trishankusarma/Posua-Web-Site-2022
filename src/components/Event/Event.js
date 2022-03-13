@@ -67,7 +67,7 @@ const Event = () => {
     initialSlide: 1,
     responsive: [
       {
-        breakpoint: 1205,
+        breakpoint: 1275,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,

@@ -238,6 +238,14 @@
   margin-right: 70px;
   font-weight: bold;
 }
+@media only screen and (max-width: 800px) {
+  .cross-active-2 {
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    left: 35vw;
+  }
+}
 @media only screen and (max-width: 425px) {
   .card .eventdetails {
     opacity: 1;
