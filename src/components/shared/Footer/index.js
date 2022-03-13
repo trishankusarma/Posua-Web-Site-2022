@@ -7,7 +7,7 @@ function Footer() {
             <h3 className='text-center py-5'>Contact Us</h3>
             <div className='container'>
                 <div className='row px-md-0 px-3' style={{ justifyContent: 'center', textAlign: 'center' }}>
-                    <div className='col-md-3 col-lg-3 col-12'>
+                    <div className='col-md-4 col-lg-4 col-12'>
                         <h3>
                             <span>Contacts</span>
                         </h3>

@@ -1,6 +1,18 @@
 .Borhomthuri {
   background: url(../../assets/bg.png);
 }
+.Borhomthuri h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ED1B24;
+
+}
+.Borhomthuri img{
+  height: calc(1.375rem + 1.5vw);
+  margin: 0 2rem;
+  
+}
 .Borhom-main {
   /* margin: 6rem auto; */
   background: url(../../assets/bg.png);

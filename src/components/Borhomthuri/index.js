@@ -8,10 +8,13 @@ import Card4 from "../../assets/Borhomthuri/Center.svg";
 import Card5 from "../../assets/Borhomthuri/2018.svg";
 import Card6 from "../../assets/Borhomthuri/2019.svg";
 import Card7 from "../../assets/Borhomthuri/2020.svg";
+import japi from '../../assets/japi.png'
+
 
 const index = () => {
   return (
-    <div className="Borhomthuri">
+    <div className="Borhomthuri pt-3">
+      <h1 className='text-center my-5'><img className='japi-animation' src={japi} alt='japi' /> BORHOMTHURI <img className='japi-animation' src={japi} alt='japi' /></h1>
       <div className="Borhom-main">
         <div className="subsec1">
           <a
