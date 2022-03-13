@@ -466,16 +466,30 @@ button {
 /* for galaxy-fold mobile */
 @media (width: 280px), (height: 653px) {
   .cover1 {
-    padding-top: 8rem;
     height: 345vh;
   }
 
   .headerSubSection {
     width: 95%;
+    margin-bottom: 20px;
   }
 
   .GalleryHeading {
     font-size: 2.25rem;
+  }
+
+  .GallerySubHeader{
+    font-size: 1.2rem;
+  }
+
+  .imageHeader{
+    font-size: 30px;
+    text-align: unset;
+    margin-top: 0;
+  }
+
+  .gallery{
+    padding: 0;
   }
 
   .Japi {
