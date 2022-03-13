@@ -39,7 +39,7 @@ const Artist = () => {
   return (
     <div className="outer_div_artist_page">
       <div className="upcomming_artists">
-        <div className="artist_text">
+        <div className="artist_text text-center">
           <h1><img src={japi} className="japi-animation" alt='japi' />Upcoming Posua 2022<img src={japi} className="japi-animation" alt='japi' /></h1>
         </div>
         <div className="artist_upcomming">
@@ -47,7 +47,7 @@ const Artist = () => {
           <ArtistCard img={PriyankaB} />
         </div>
       </div>
-      <div className='acc-bg pb-5'>
+      <div className='acc-bg pb-5 artists-acc'>
         <div className={"accordion pb-3" + (show ? " accordion-active" : "")}>
           <div className='dropdown'>
             <button type='button' className='accordion_button' style={{ width: '70%' }} onClick={(e) => openTab(e)}><img src={japi} alt='japi' /><span> ADDITIONAL DETAILS </span><img className='arrow' src={arrow} style={{ margin: '0' }} alt='arrow' /><img src={japi} alt='japi' /></button>
