@@ -132,7 +132,7 @@
     left: -200px;
   }
   100% {
-    transform: translateX(70px) translateY(120px) scale(1.4);
+    transform: translateX(70px) translateY(120px) scale(1.3);
     position: relative;
     left: 0px;
   }
@@ -144,7 +144,7 @@
     left: -200px;
   }
   100% {
-    transform: translateX(70px) translateY(16rem) scale(1.4);
+    transform: translateX(3.4rem) translateY(16rem) scale(1.3);
     position: relative;
     left: 0px;
   }
@@ -324,5 +324,13 @@
     position: absolute;
     top: 2px;
     left: 40vw;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .card-container {
+    transform: scale(0.9);
+  }
+  .card {
+    transform: scale(0.9);
   }
 }
