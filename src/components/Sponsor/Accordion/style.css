@@ -40,7 +40,8 @@
 .accordion .arrow{
     position: absolute;
     width: 20px;
-    bottom: 0;
+    bottom: -7px;
+    margin: 0;
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.4s;

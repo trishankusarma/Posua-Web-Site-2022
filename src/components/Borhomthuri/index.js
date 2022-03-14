@@ -12,15 +12,15 @@ import japi from "../../assets/japi.png";
 
 const index = () => {
   return (
-    <div className="Borhomthuri pt-3">
-      <h1 className="text-center my-5">
+    <div className="Borhomthuri pt-3 pb-md-5 pb-0">
+      <h1 className="text-center mt-5">
         <img className="japi-animation" src={japi} alt="japi" /> BORHOMTHURI{" "}
         <img className="japi-animation" src={japi} alt="japi" />
       </h1>
       <p className="borhom-text">
-        Borhomthuri is the annual souvenir of POSUA.It enfolds indispensable
+        Borhomthuri is the annual souvenir of POSUA. It enfolds indispensable
         parts of Assamese Culture and also the emotions of students in the form
-        of enthralling articles,poems,stories and sketches.Borhomthuri reflects
+        of enthralling articles, poems, stories and sketches. Borhomthuri reflects
         the ardour of NITS Family towards POSUA and provides an opportunity for
         the literary skills of students to get revived.
       </p>
