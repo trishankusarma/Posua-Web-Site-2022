@@ -364,7 +364,45 @@ button {
     width: 90%;
   }
 }
+@media (max-width: 769px) {
+  .buttonTabs-row-1 {
+    width: 95vw;
+  }
 
+  .buttonTabs-row-2 {
+    width: 85vw;
+  }
+
+  .HeaderSection {
+    margin-top: 100px;
+    margin-bottom: 7rem;
+  }
+
+  .cover1 {
+    height: 325vh;
+    padding-top: 7rem;
+  }
+
+  .REMOVE {
+    display: none;
+  }
+
+  .HIDE {
+    display: unset;
+  }
+
+  .headerSubSection {
+    width: 85%;
+  }
+
+  .container1 {
+    width: 100%;
+  }
+
+  .tabs {
+    font-size: 25px;
+  }
+}
 @media (max-width: 415px) {
   .buttonTabs-row-1 {
     width: 95vw;
@@ -455,49 +493,10 @@ button {
 
 @media (max-height: 668px) {
   .cover1 {
-    height: 388vh;
-    padding-top: 5rem;
+    height: 385vh;
+    padding-top: 4rem;
   }
   .HeaderSection {
     margin-bottom: 2rem;
-  }
-}
-
-/* for galaxy-fold mobile */
-@media (width: 280px), (height: 653px) {
-  .cover1 {
-    height: 345vh;
-  }
-
-  .headerSubSection {
-    width: 95%;
-    margin-bottom: 20px;
-  }
-
-  .GalleryHeading {
-    font-size: 2.25rem;
-  }
-
-  .GallerySubHeader{
-    font-size: 1.2rem;
-  }
-
-  .imageHeader{
-    font-size: 30px;
-    text-align: unset;
-    margin-top: 0;
-  }
-
-  .gallery{
-    padding: 0;
-  }
-
-  .Japi {
-    width: 40px;
-    height: 40px;
-  }
-
-  .HeaderSection {
-    margin-bottom: 5rem;
   }
 }

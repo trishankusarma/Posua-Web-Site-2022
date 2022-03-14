@@ -37,7 +37,7 @@
 }
 .top-section .event_content {
   width: 46%;
-  margin: 200px 140px;
+  margin: 160px 140px;
   text-align: justify;
   line-height: 1.5rem;
   font-size: 0.9rem;
@@ -55,8 +55,8 @@
   /* margin: 0; */
   /* padding: 20px; */
   position: absolute;
-  right: 100px;
-  top: 150px;
+  right: 6vw;
+  top: 160px;
 }
 .main-section {
   height: 100vh;
@@ -227,16 +227,50 @@
     transform: translateX(1100px) translateY(-200px);
   }
   50% {
-    transform: translateY(-50px) translateX(1050px);
+    transform: translateY(-50px) translateX(1040px);
   }
   100% {
-    transform: translateY(-50px) translateX(1050px) scale(1.1);
+    transform: translateY(-50px) translateX(1040px) scale(1.1);
+  }
+}
+@keyframes card4x {
+  0% {
+    position: relative;
+    transform: translateX(850px) translateY(-200px);
+  }
+  50% {
+    transform: translateY(-50px) translateX(850px);
+  }
+  100% {
+    transform: translateY(-50px) translateX(850px) scale(1.1);
   }
 }
 .item-inactive {
   opacity: 0;
 }
-
+@media only screen and (max-width: 1275px) {
+  .top-section .dance-bg {
+    position: relative;
+    left: 55vw;
+    top: 13vh;
+    width: 484px;
+  }
+  .top-section .event_content {
+    position: absolute;
+    top: 6rem;
+    left: -99px;
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  .item:nth-of-type(4) {
+    position: relative;
+    animation-name: card4x;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 0;
+  }
+}
 @media only screen and (max-width: 700px) {
   .top-section .dance-bg {
     position: relative;
@@ -246,15 +280,16 @@
   }
   .top-section .event_content {
     position: absolute;
-    top: 120px;
+    top: 260px;
     left: -120px;
     width: 90%;
   }
   .top-section {
-    height: 150vh;
+    height: 120vh;
   }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 525px) {
   .top-section .events {
     position: relative;
     left: 4px;

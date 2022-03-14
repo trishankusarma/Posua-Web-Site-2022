@@ -21,6 +21,7 @@
   margin-bottom: 2%;
 }
 .artist_text h1 {
+  text-align: center;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -32,6 +33,11 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.artist_text img{
+  height: calc(1.375rem + 1.5vw);
+  margin: 0 2rem;
+  
 }
 .add_details {
   width: 100%;
@@ -89,10 +95,13 @@
   width: 70%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   transition: all 1s ease;
   flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
 }
 .details .assamese {
   padding: 1rem;
@@ -135,14 +144,34 @@
     margin-top: 5rem;
     margin: 0;
   }
-  .details{
+  .details {
     width: 90%;
     font-size: 0.8rem;
   }
+  .artists-acc .accordion .dropdown button{
+    width: 90% !important;
+    margin: auto;
+    margin-top: 20vh;
+  }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .add_details {
     margin-top: 8rem;
-    }
+  }
+}
+.poster {
+  margin: auto;
+  height: 75vh;
+  width: 90%;
+}
+
+@media screen  and (max-width: 430px) and (max-height: 740px) {
+  .artist_upcomming{
+    padding-top: 8rem;
+  }
+  .artists-acc .accordion{
+    margin-top: 36vh;
+  }
+
 }

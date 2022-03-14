@@ -67,7 +67,7 @@ const Event = () => {
     initialSlide: 1,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1275,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -75,7 +75,7 @@ const Event = () => {
         },
       },
       {
-        breakpoint: 769,
+        breakpoint: 820,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -83,7 +83,7 @@ const Event = () => {
         },
       },
       {
-        breakpoint: 450,
+        breakpoint: 525,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
