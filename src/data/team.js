@@ -28,7 +28,7 @@ const teams = [
     name: "Dr. Pranjit Barman",
     role: "Mentor",
     phoneNo: null,
-    email: "email",
+    email: "pranjit@che.nits.ac.in",
     img: c5,
   },
 
