@@ -52,7 +52,7 @@ const webTeam_heads = [
 const webTeam_members = [
   {
     img: Biju,
-    name: "Biju Bora",
+    name: "Biju Borah",
     role: "Developer",
   },
   {
