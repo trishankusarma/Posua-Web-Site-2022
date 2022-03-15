@@ -85,13 +85,42 @@ body {
   display: flex;
   justify-content: center;
   /* padding-bottom: 3em; */
+  transition: background 1s all linear;
 }
 
 .content {
   display: flex;
   align-items: center;
+  background: linear-gradient(to right, rgba(244, 219, 186, 1), rgba(255, 249, 237, 1));
+  transition: all 1s ease-in-out;
+  border-left: 1px solid rgba(244, 219, 186, 1);
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 30%;
 }
+.content:hover{
+  background: linear-gradient(to left, rgba(244, 219, 186, 1), rgba(255, 249, 237, 1));
+  transform: scale(1.05);
+}
+.content img{
+  transform: translateX(-35px);
+}
+.right-card .content{
+  background: linear-gradient(to left, rgba(244, 219, 186, 1), rgba(255, 249, 237, 1));
+  border-left: none;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-right: 1px solid rgba(244, 219, 186, 1);
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 30%;
+}
+.right-card .content:hover{
+  background: linear-gradient(to right, rgba(244, 219, 186, 1), rgba(255, 249, 237, 1));
+  transform: scale(1.05);
 
+}
+.right-card .content img{
+  transform: translateX(35px);
+}
 .text {
   display: block;
   padding: 0 1em;
@@ -186,7 +215,7 @@ body {
 
 .container {
   padding: 28em 0;
-  width: 60%;
+  width: 75%;
 }
 
 @media screen and (min-width: 980px) {
@@ -261,4 +290,13 @@ body {
   .cards{
       margin: 0;
     }
+    .text {
+  font-size: 0.8rem;
+  }
+  .right-card .content img{
+    transform: translateX(15px);
+  }
+  .left-card .content img{
+    transform: translateX(-15px);
+  }
 }
