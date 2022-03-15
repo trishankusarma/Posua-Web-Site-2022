@@ -6,7 +6,7 @@ import team1 from '../.././assets/team1.png'
 
 import Carousel from 'react-elastic-carousel';
 import TeamDetails from '../../data/team';
-import webTeam from '../../data/webTeam';
+import { webTeam_heads } from '../../data/webTeam';
 import TeamProfile from './team_profile';
 import TeamCard from './teamCard'
 
@@ -67,9 +67,9 @@ export default function team() {
         <Carousel breakPoints={breakPoints} className="bottom-cards">
 
           {
-            webTeam.map(({ name, role, img }) => (
+            webTeam_heads.map(({ name, role, img , type }) => (
 
-              < TeamProfile name={name} role={role} img={img} />
+                 < TeamProfile name={name} role={role} img={img} />
             ))
           }
 
