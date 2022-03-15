@@ -133,4 +133,7 @@
   .content img {
     width: 8em;
   }
+  .bottom-cards {
+    margin-top: 3rem;
+  }
 }

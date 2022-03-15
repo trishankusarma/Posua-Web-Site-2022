@@ -54,7 +54,7 @@ export default function Team1() {
   return (
     <>
       <div className="main">
-        <div className="heading" style={{ height: "20vh" }}>
+        <div className="heading" style={{ height: "30vh" }}>
           <div className="heading-name">
             <img className="Japi" src={japi} alt="" />
             <span className="team">{title}</span>
