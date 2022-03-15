@@ -186,7 +186,7 @@ body {
 
 .container {
   padding: 28em 0;
-  width: 74%;
+  width: 60%;
 }
 
 @media screen and (min-width: 980px) {
@@ -205,9 +205,9 @@ body {
     padding-bottom: 5vh;
   }
 
-  /* .cards{
-        display: flex;
-    } */
+  .cards{
+      margin: -4rem;
+    }
 
   .left-card,
   .right-card {
@@ -258,4 +258,7 @@ body {
   .mid-card {
     padding: 3rem 0;
   }
+  .cards{
+      margin: 0;
+    }
 }

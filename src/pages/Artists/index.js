@@ -55,7 +55,14 @@ const Artist = () => {
           </div>
           <div className="details mt-3">
             <div className="detail_1">
-              <img src={PB} alt="" />
+              {/* <img src={PB} alt="" /> */}
+              <div
+              className="poster"
+              style={{
+                background: `url(${PB}) center no-repeat`,
+                backgroundSize: "contain",
+              }}
+            ></div>
               <div className="assamese">
                 'পছোৱা'-ৰ উদ্দাম বতাহজাকত উন্মনা এন আই টি শিলচৰবাসী লুইতপৰীয়াৰ
                 দেহ-মনক দুগুণে শিহৰিত কৰিবলৈ কোনোবা সুদূৰৰ পৰা ভাঁহি আহিছে 'জুৰ
@@ -84,7 +91,14 @@ const Artist = () => {
               <img src={Hr} alt=" a line" style={{ margin: " 0 auto" }} />
             </div>
             <div className="detail_1">
-              <img src={TT} alt="" />
+              {/* <img src={TT} alt="" /> */}
+              <div
+              className="poster"
+              style={{
+                background: `url(${TT}) center no-repeat`,
+                backgroundSize: "contain",
+              }}
+            ></div>
               <div className="assamese">
                 এজাক মৃদু বৰষুণ আৰু চঞ্চলা পছোৱাৰ বোকোচাত ভাঁহি অহা কুলি-কেতেকীৰ
                 আপোন-পাহৰা সুৰৰ যোজনাই নিদ্ৰামগ্ন প্ৰকৃতিৰ শীতৰ শেতেলীত বসন্তৰ
