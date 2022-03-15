@@ -62,11 +62,11 @@ export default function Team1() {
           </h1>
 
           <hr className="GalleryHeaderBorder" />
-          {/* <div className="GalleryHeaderBorderIconSection">
+          <div className="GalleryHeaderBorderIconSection">
             <img src={japi} className="SmallJapi" alt="japi-img"></img>
             <img src={japi} className="MidJapi" alt="japi-img"></img>
             <img src={japi} className="SmallJapi" alt="japi-img"></img>
-          </div> */}
+          </div>
         </div>
 
         <div className="bottom-cards">
