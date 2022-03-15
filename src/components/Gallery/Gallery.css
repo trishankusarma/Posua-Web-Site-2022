@@ -8,7 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .cover1 {
-  height: 255vh;
+  height: auto;
   background-color: #fff9ed;
   background-image: url(../../assets/bg.png);
   padding-top: 2rem;
@@ -138,7 +138,7 @@ body {
   flex-direction: column;
   position: relative;
   width: 85%;
-  height: 80vh;
+  height: auto;
   margin: 100px auto 0;
   margin-top: 0;
   word-break: break-all;
@@ -224,7 +224,6 @@ button {
   height: 50px;
   margin: 0 auto;
   position: relative;
-  bottom: 40px;
 }
 
 /* gallery */
@@ -379,7 +378,7 @@ button {
   }
 
   .cover1 {
-    height: 325vh;
+    height: auto;
     padding-top: 7rem;
   }
 
@@ -397,13 +396,14 @@ button {
 
   .container1 {
     width: 100%;
+    height: auto;
   }
 
   .tabs {
     font-size: 25px;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 480px) {
   .buttonTabs-row-1 {
     width: 95vw;
   }
@@ -418,10 +418,9 @@ button {
   }
 
   .cover1 {
-    height: 325vh;
+    height: auto;
     padding-top: 8rem;
-  }
-
+}
   .REMOVE {
     display: none;
   }
@@ -436,7 +435,8 @@ button {
 
   .container1 {
     width: 100%;
-  }
+    height: auto;
+}
 
   .tabs {
     font-size: 25px;
@@ -453,7 +453,7 @@ button {
 
 @media (max-width: 395px) {
   .cover1 {
-    height: 335vh;
+    height: auto;
     padding-top: 10rem;
   }
   .HeaderSection {
@@ -463,7 +463,7 @@ button {
 
 @media (max-width: 380px) {
   .cover1 {
-    height: 345vh;
+    height: auto;
     padding-top: 4rem;
   }
 
@@ -482,8 +482,7 @@ button {
   }
 
   .container1 {
-    position: relative;
-    top: 140px;
+    margin-top: 12rem;
   }
 
   .GalleryHeading {
@@ -492,10 +491,10 @@ button {
 }
 
 @media (max-height: 668px) {
-  .cover1 {
+  /* .cover1 {
     height: 385vh;
     padding-top: 4rem;
-  }
+  } */
   .HeaderSection {
     margin-bottom: 2rem;
   }
