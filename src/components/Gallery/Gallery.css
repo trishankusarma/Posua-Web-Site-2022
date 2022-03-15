@@ -173,7 +173,7 @@ body {
   color: #7d776b;
   padding: 5px 10px;
   text-align: center;
-  width: 16.6%;
+  width: 12.6%;
   cursor: pointer;
   box-sizing: content-box;
   position: relative;
@@ -367,6 +367,9 @@ button {
 
   .GalleryHeaderBorder {
     width: 90%;
+  }
+  .tabs{
+    width: 16.7%;
   }
 }
 @media (max-width: 769px) {
