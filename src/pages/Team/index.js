@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import japi from "../.././assets/japi.png";
 // import frame from '../.././assets/frame.png'
 import team1 from "../.././assets/team1.png";
 import { Link } from "react-router-dom";
@@ -9,6 +8,8 @@ import TeamDetails from "../../data/team";
 import { webTeam_heads } from "../../data/webTeam";
 import TeamProfile from "./team_profile";
 import TeamCard from "./teamCard";
+import japi from "../../assets/japi.png";
+
 
 export default function team() {
   const breakPoints = [
@@ -22,13 +23,12 @@ export default function team() {
     <>
       <div className="main">
         <div className="heading">
-          <div className="heading-name">
-            <img className="Japi" src={japi} alt="" />
-            <span className="team">TEAM POSUA</span>
-            <img className="Japi" src={japi} alt="" />
-          </div>
+          <h1 className="text-center heading-name mt-5">
+            <img className="japi-animation team-japi" src={japi} alt="japi" /> Team Posua{" "}
+            <img className="japi-animation team-japi" src={japi} alt="japi" />
+          </h1>
 
-          <p className="GallerySubHeader mt-5">
+          <p className="GallerySubHeader">
             With the arrival of spring and the departure of winter days, our
             Mother Nature expresses her joy of welcoming the calming
             rejuvenation via greenery and brightness all around her. Our Spring

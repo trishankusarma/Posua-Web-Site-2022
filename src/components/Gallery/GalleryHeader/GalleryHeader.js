@@ -1,16 +1,17 @@
 import React from 'react'
-import pic from '../../../assets/GalleryImages/japi_img.png'
+import japi from '../../../assets/japi.png'
 import GallerySubHeader from './GallerySubHeader'
 
 function GalleryHeader() {
   return (
     <div className='HeaderSection'>
-        <div className="headerSubSection">
-            <img className="Japi" src={pic} alt='japi-img'></img> 
-            <h1 className='GalleryHeading'>GALLERY</h1>
-            <img className="Japi" src={pic} alt='japi-img'></img> 
-        </div>
-        <GallerySubHeader/>
+      <div className="headerSubSection heading">
+        <h1 className="text-center heading-name">
+          <img className="japi-animation team-japi" src={japi} alt="japi" /> Gallery{" "}
+          <img className="japi-animation team-japi" src={japi} alt="japi" />
+        </h1>
+      </div>
+      <GallerySubHeader />
     </div>
   )
 }
