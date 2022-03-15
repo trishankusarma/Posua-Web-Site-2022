@@ -213,7 +213,7 @@ body {
   padding: 2em 0;
 }
 
-.container {
+.main .container {
   padding: 28em 0;
   width: 75%;
 }
@@ -229,9 +229,9 @@ body {
     padding: 2em 10em;
   }
 
-  .container {
+  .main .container {
     padding: 0;
-    padding-bottom: 5vh;
+    padding-bottom: 20vh;
   }
 
   .cards{
@@ -277,7 +277,7 @@ body {
     width: 20px;
     /* padding: 0 1em; */
   }
-  .container {
+  .main .container {
     width: 100%;
     padding: 0;
     padding-bottom: 5vh;
