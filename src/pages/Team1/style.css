@@ -1,12 +1,11 @@
-.main
-{
-    background-color: #FFF9ED;
-    padding-top: 8em;
+.main {
+  background-color: #fff9ed;
+  padding-top: 8em;
 }
 
-.heading{
-    width: 100vw;
-    height: 60vh;
+.heading {
+  width: 100vw;
+  height: 60vh;
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -17,127 +16,121 @@
   align-items: center;
 }
 
-.heading-name{
+.heading-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 3.6em;
+  background: #f41a01;
+  background: -webkit-linear-gradient(to right, #f41a01 0%, #ffd9a8 140%);
+  background: -moz-linear-gradient(to right, #f41a01 0%, #ffd9a8 140%);
+  background: linear-gradient(to right, #f41a01 0%, #ffd9a8 140%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-description {
+  padding: 2em 3em;
+}
+
+.description {
+  font-size: 1.5em;
+  color: #7d776b;
+}
+
+.line {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 0 4em;
+}
+
+.japi .midImg {
+  margin: 0 1.6em;
+}
+
+.team1 {
+  font-size: 2.8em;
+  color: #554f39;
+}
+
+.outer-frame {
+  background: url(../.././assets/red-frame.png);
+  width: 18.5rem;
+  height: 22rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.outer-frame img {
+  width: 14.2rem;
+  height: 17.5rem;
+  object-fit: cover;
+  resize: both;
+  margin-top: 40px;
+}
+
+.outer-frame:hover .image {
+  transform: translateY(-5.5rem);
+}
+
+.outer-frame:hover .frame-content {
+  transform: translateY(-1rem);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.frame-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.7rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.frame-name {
+  font-size: 1.2em;
+}
+
+.frame-role {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 980px) {
+  .heading-description {
+    padding: 2em 10em;
+  }
+
+  .bottom-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.team{
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 3.6em;
-    background: #F41A01;
-    background: -webkit-linear-gradient(to right, #F41A01 0%, #FFD9A8 140%);
-    background: -moz-linear-gradient(to right, #F41A01 0%, #FFD9A8 140%);
-    background: linear-gradient(to right, #F41A01 0%, #FFD9A8 140%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.heading-description{
-    padding: 2em 3em;
-}
-
-.description{
-    font-size: 1.5em;
-    color: #7D776B;
-}
-
-.line{
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    padding: 0 4em;
-}
-
-.japi .midImg{
-    margin: 0 1.6em;
-}
-
-
-.team1{
-    font-size: 2.8em;
-    color: #554F39;
-}
-
-
-.outer-frame{
-    background: url(../.././assets/red-frame.png);
-    width: 18.5rem;
-    height: 22rem;
-    margin: 2rem;
-    position: relative;
-}
-
-.outer-frame img{
-    width: 14.2rem;
-    height: 17.5rem;
-    object-fit: cover;
-    resize: both;
-    margin-top: 40px;
-}
-
- .outer-frame:hover .image {
-    transform: translateY(-5.5rem);
   }
-  
- .outer-frame:hover .frame-content {
-    transform: translateY(-1rem);
-  }
-  
-  .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .frame-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1.7rem;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    align-items: flex-end;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-  }
-
-.frame-name{
-    font-size: 1.2em;
 }
 
-.frame-role{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-@media screen and (min-width: 980px)
-{
-    .heading-description{
-        padding: 2em 10em;
-    }
-
-    .bottom-cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-
-@media screen and (max-width: 600px)
-{
-    .content img{
-        width: 8em;
-    }
+@media screen and (max-width: 600px) {
+  .content img {
+    width: 8em;
+  }
 }

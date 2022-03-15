@@ -73,7 +73,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 3em;
+  /* padding-bottom: 3em; */
 }
 
 .content {
@@ -175,6 +175,7 @@ body {
 
 .container {
   padding: 28em 0;
+  width: 74%;
 }
 
 @media screen and (min-width: 980px) {
@@ -234,5 +235,13 @@ body {
   .line {
     width: 20px;
     /* padding: 0 1em; */
+  }
+  .container {
+    width: 100%;
+  }
+  .left-card,
+  .right-card,
+  .mid-card {
+    padding: 3rem;
   }
 }
