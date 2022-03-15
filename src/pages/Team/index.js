@@ -6,7 +6,7 @@ import team1 from '../.././assets/team1.png'
 
 import Carousel from 'react-elastic-carousel';
 import TeamDetails from '../../data/team';
-import ProfileDetails from '../../data/profile';
+import { webTeam_heads } from '../../data/webTeam';
 import TeamProfile from './team_profile';
 import TeamCard from './teamCard'
 
@@ -18,8 +18,6 @@ export default function team() {
     { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 4 },
   ];
-
-  const allign_ment_type = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1];
 
   return (
     <>
@@ -49,7 +47,7 @@ export default function team() {
           {
             TeamDetails.map(({ name, role, phoneNo, email, img }, index) => (
 
-              < TeamCard type={allign_ment_type[index]} name={name} role={role} phoneNo={phoneNo} email={email} img={img} />
+              < TeamCard type={ index%2 } name={name} role={role} phoneNo={phoneNo} email={email} img={img} />
             ))
           }
 
@@ -59,7 +57,7 @@ export default function team() {
         {/* team 1 */}
         <center>
           <div className="bottom-heading">
-            <a href="/team1" style={{ textDecoration: "none" }}><span className="team1">TEAM 1</span></a>
+            <a href="/team1/1" style={{ textDecoration: "none" }}><span className="team1">WEB TEAM</span></a>
           </div>
           <img src={team1} alt="" />
         </center>
@@ -69,9 +67,9 @@ export default function team() {
         <Carousel breakPoints={breakPoints} className="bottom-cards">
 
           {
-            ProfileDetails.map(({ name, role, img }) => (
+            webTeam_heads.map(({ name, role, img , type }) => (
 
-              < TeamProfile name={name} role={role} img={img} />
+                 < TeamProfile name={name} role={role} img={img} />
             ))
           }
 
@@ -97,7 +95,9 @@ export default function team() {
 
         </Carousel>
 
-
+        <div style={{ fontSize:"2rem" , textAlign:"center" , padding:"1rem" }}>
+           Details of other teams to be updated soon...
+        </div>
         {/* </div> */}
       </div>
     </>
