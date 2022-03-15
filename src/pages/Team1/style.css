@@ -1,15 +1,13 @@
 .main {
   background-color: #fff9ed;
-  padding-top: 8em;
+  padding-top: 4rem;
 }
 
 .heading {
   width: 100vw;
-  height: 60vh;
   background-color: transparent;
   padding: 0;
   margin: 0;
-  margin-top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +128,15 @@
 }
 
 @media screen and (max-width: 600px) {
+ 
+  .heading{
+    margin-top: 0;
+  }
   .content img {
     width: 8em;
+  }
+  .team{
+    font-size: 2rem;
+    text-align: center;
   }
 }

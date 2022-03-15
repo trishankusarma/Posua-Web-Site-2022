@@ -11,7 +11,6 @@ body {
 
 .heading {
   width: 100vw;
-  height: 60vh;
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -21,13 +20,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.heading-name {
+.heading .heading-name {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient( 100deg, rgba(255, 217, 168, 1), rgba(244, 26, 1, 1) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading .team-japi {
+  height: calc(1.375rem + 1.5vw);
+  margin: 0 2rem;
+}
+/* .heading-name {
   margin-top: 20em;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* @media screen and(max-width:900px){
     .heading-name{
@@ -242,6 +253,6 @@ body {
   .left-card,
   .right-card,
   .mid-card {
-    padding: 3rem;
+    padding: 3rem 0;
   }
 }
