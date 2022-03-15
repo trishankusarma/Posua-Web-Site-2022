@@ -143,5 +143,6 @@
   }
   .outer-frame{
     margin: 0;
+    background-position-x: center;
   }
 }
