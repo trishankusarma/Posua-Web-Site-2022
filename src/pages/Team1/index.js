@@ -53,13 +53,13 @@ export default function Team1() {
 
   return (
     <>
-      <div className="main">
-        <div className="heading" style={{ height: "30vh" }}>
-          <div className="heading-name">
-            <img className="Japi" src={japi} alt="" />
-            <span className="team">{title}</span>
-            <img className="Japi" src={japi} alt="" />
-          </div>
+      <div className="main" style={{ paddingTop: "8rem" }}>
+        <div className="heading" style={{ height: "20vh" }}>
+          <h1 className="text-center heading-name my-5">
+            <img className="japi-animation team-japi" src={japi} alt="japi" />{" "}
+            {title}
+            <img className="japi-animation team-japi" src={japi} alt="japi" />
+          </h1>
 
           <hr className="GalleryHeaderBorder" />
           {/* <div className="GalleryHeaderBorderIconSection">
