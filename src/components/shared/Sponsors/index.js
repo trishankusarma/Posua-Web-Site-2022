@@ -20,9 +20,9 @@ export default function Sponsers() {
       <div className="sponser-img">
         <img src={gplusLogo} alt="logo" />
         <img src={cropzo} alt="logo" />
+        {/* <img src={gplusLogo} alt="logo" />
         <img src={gplusLogo} alt="logo" />
-        <img src={gplusLogo} alt="logo" />
-        <img src={gplusLogo} alt="logo" />
+        <img src={gplusLogo} alt="logo" /> */}
       </div>
     </div>
   );

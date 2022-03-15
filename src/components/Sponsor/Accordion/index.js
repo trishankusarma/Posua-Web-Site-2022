@@ -31,7 +31,7 @@ function Accordion() {
                         <button type='button' className='accordion_button' onClick={(e) => openTab(e, index)}><img src={japi} alt='japi' /><span> {data.heading} </span><img className='arrow' src={arrow} alt='arrow' /><img src={japi} alt='japi' /></button>
                         
                     </div>
-                    <div className='content'>
+                    <div className='content' style={{borderRadius:"0", background:"transparent",transform:"none"}}>
                         <p>
                             {data.content}
                         </p>
