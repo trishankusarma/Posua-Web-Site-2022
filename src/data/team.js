@@ -66,7 +66,7 @@ const teams = [
 
   {
     name: "Sonjyoti Nath",
-    role: "Coordinator",
+    role: "Chief Coordinator",
     phoneNo: "8133094439",
     email: "nsonjyoti@gmail.com",
     img: c8,
@@ -74,7 +74,7 @@ const teams = [
 
   {
     name: "Arindam Kharghoria",
-    role: "Coordinator",
+    role: "Chief Coordinator",
     phoneNo: "8638509919",
     email: "arindam_ug@civil.nits.ac.in",
     img: c7,
@@ -140,7 +140,7 @@ const teams = [
     name: "Priyangshu Goswami ",
     role: "Marketing Head",
     phoneNo: "7002140341",
-    email: "priyangshugoswami1999@gmail.com ",
+    email: "priyangshu1999@gmail.com ",
     img: c16,
   },
 ];

@@ -1,5 +1,6 @@
 import c2 from '../assets/c2.png'
 import Chinmoy from  "../assets/Chinmoy.jpg";
+import Pranjal from "../assets/Pranjal.jpg";
 import Arshad from '../assets/Arshad.jpg';
 import Trishanku from '../assets/Trishanku.jpeg';
 import Abhishek from '../assets/Obhishake.jpg';
@@ -13,7 +14,7 @@ const webTeam = [
     } ,
 
     {
-        img : c2,
+        img : Pranjal,
         name : "Pranjal Dahal",
         role : "Head"
    } ,
