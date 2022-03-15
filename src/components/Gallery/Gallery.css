@@ -60,9 +60,9 @@ body {
 
 .GallerySubHeader {
   font-family: "Philosopher", sans-serif;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 1.5rem;
   color: #7d776b;
   text-align: center;
   margin-bottom: 60px;
@@ -303,7 +303,7 @@ button {
   }
 
   .GallerySubHeader {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
   }
 
   .headerSubSection {
@@ -343,7 +343,7 @@ button {
 
 @media (max-width: 491px) {
   .GallerySubHeader {
-    font-size: 1.5625rem;
+    font-size: 1.2rem;
     width: 90%;
   }
 
@@ -374,12 +374,12 @@ button {
 
   .HeaderSection {
     margin-top: 100px;
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
   }
 
   .cover1 {
     height: auto;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
   }
 
   .REMOVE {
@@ -403,7 +403,12 @@ button {
     font-size: 25px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 415px) and (max-height:768px){
+  .cover1{
+    height: auto !important;
+  }
+}
+@media (max-width: 415px)  {
   .buttonTabs-row-1 {
     width: 95vw;
   }
@@ -414,13 +419,14 @@ button {
 
   .HeaderSection {
     margin-top: 100px;
-    margin-bottom: 8rem;
+    /* margin-bottom: 7rem; */
   }
 
   .cover1 {
     height: auto;
-    padding-top: 8rem;
-}
+    /* padding-top: 7rem; */
+  }
+
   .REMOVE {
     display: none;
   }
@@ -454,10 +460,10 @@ button {
 @media (max-width: 395px) {
   .cover1 {
     height: auto;
-    padding-top: 10rem;
+    padding-top: 4rem;
   }
   .HeaderSection {
-    margin-bottom: 8.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -468,12 +474,11 @@ button {
   }
 
   .GallerySubHeader {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .HeaderSection {
     position: relative;
-    top: 60px;
     margin-bottom: 1rem;
   }
 
@@ -482,7 +487,8 @@ button {
   }
 
   .container1 {
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
+    position: relative;
   }
 
   .GalleryHeading {
@@ -490,12 +496,18 @@ button {
   }
 }
 
-@media (max-height: 668px) {
-  /* .cover1 {
-    height: 385vh;
+@media (max-height: 668px) and (max-width:500px) {
+  .cover1 {
+    height: auto;
     padding-top: 4rem;
   } */
   .HeaderSection {
     margin-bottom: 2rem;
+  }
+}
+@media (max-width: 380px) and (min-height:800px) {
+.cover1 {
+    height: auto;
+    padding-top: 4rem;
   }
 }
