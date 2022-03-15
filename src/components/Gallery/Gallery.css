@@ -8,7 +8,7 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .cover1 {
-  height: 255vh;
+  height: auto;
   background-color: #fff9ed;
   background-image: url(../../assets/bg.png);
   padding-top: 2rem;
@@ -138,7 +138,7 @@ body {
   flex-direction: column;
   position: relative;
   width: 85%;
-  height: 80vh;
+  height: auto;
   margin: 100px auto 0;
   margin-top: 0;
   word-break: break-all;
@@ -149,6 +149,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.buttonTabs-row-1, .buttonTabs-row-2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .ContentHeader {
@@ -167,7 +173,7 @@ body {
   color: #7d776b;
   padding: 5px 10px;
   text-align: center;
-  width: 150px;
+  width: 12.6%;
   cursor: pointer;
   box-sizing: content-box;
   position: relative;
@@ -224,7 +230,6 @@ button {
   height: 50px;
   margin: 0 auto;
   position: relative;
-  bottom: 40px;
 }
 
 /* gallery */
@@ -304,7 +309,7 @@ button {
   }
 
   .GallerySubHeader {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
   }
 
   .headerSubSection {
@@ -363,6 +368,9 @@ button {
   .GalleryHeaderBorder {
     width: 90%;
   }
+  .tabs{
+    width: 16.7%;
+  }
 }
 @media (max-width: 769px) {
   .buttonTabs-row-1 {
@@ -379,7 +387,7 @@ button {
   }
 
   .cover1 {
-    height: 325vh;
+    height: auto;
     /* padding-top: 7rem; */
   }
 
@@ -397,6 +405,7 @@ button {
 
   .container1 {
     width: 100%;
+    height: auto;
   }
 
   .tabs {
@@ -405,7 +414,7 @@ button {
 }
 @media (max-width: 415px) and (max-height:768px){
   .cover1{
-    height: 380vh !important;
+    height: auto !important;
   }
 }
 @media (max-width: 415px)  {
@@ -423,7 +432,7 @@ button {
   }
 
   .cover1 {
-    height: 320vh;
+    height: auto;
     /* padding-top: 7rem; */
   }
 
@@ -441,7 +450,8 @@ button {
 
   .container1 {
     width: 100%;
-  }
+    height: auto;
+}
 
   .tabs {
     font-size: 25px;
@@ -458,7 +468,7 @@ button {
 
 @media (max-width: 395px) {
   .cover1 {
-    height: 335vh;
+    height: auto;
     padding-top: 4rem;
   }
   .HeaderSection {
@@ -468,7 +478,7 @@ button {
 
 @media (max-width: 380px) {
   .cover1 {
-    height: 345vh;
+    height: auto;
     padding-top: 4rem;
   }
 
@@ -486,6 +496,7 @@ button {
   }
 
   .container1 {
+    /* margin-top: 12rem; */
     position: relative;
   }
 
@@ -496,16 +507,16 @@ button {
 
 @media (max-height: 668px) and (max-width:500px) {
   .cover1 {
-    height: 385vh;
+    height: auto;
     padding-top: 4rem;
-  }
+  } */
   .HeaderSection {
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 380px) and (min-height:800px) {
 .cover1 {
-    height: 325vh;
+    height: auto;
     padding-top: 4rem;
   }
 }
