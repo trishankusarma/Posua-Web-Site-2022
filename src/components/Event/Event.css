@@ -248,7 +248,7 @@
 .item-inactive {
   opacity: 0;
 }
-@media only screen and (max-width: 1275px) {
+@media only screen and (max-width: 1285px) {
   .top-section .dance-bg {
     position: relative;
     left: 55vw;
@@ -257,7 +257,7 @@
   }
   .top-section .event_content {
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     left: -99px;
     width: 50%;
     font-size: 0.8rem;
