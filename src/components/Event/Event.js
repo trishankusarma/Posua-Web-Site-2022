@@ -67,7 +67,15 @@ const Event = () => {
     initialSlide: 1,
     responsive: [
       {
-        breakpoint: 1275,
+        breakpoint: 1285,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -102,9 +110,8 @@ const Event = () => {
         <div className={` ${active === 2 ? "events-max" : "events"}`}></div>
         <div className="dance-bg"></div>
         <div
-          className={` ${
-            active === 2 ? "event_content-inactive" : "event_content"
-          }`}
+          className={` ${active === 2 ? "event_content-inactive" : "event_content"
+            }`}
         >
           POSUA, the spring fest of NIT Silchar, spreads out exuberance all
           around with the arrival of spring rejuvenating the land. This ecstatic
