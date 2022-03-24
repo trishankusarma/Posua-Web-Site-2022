@@ -67,7 +67,7 @@ const webTeam_members = [
   },
   {
     img: Princi,
-    name: "Princi Pawan Saikia",
+    name: "Princhi Pawan Saikia",
     role: "Developer",
   },
   {

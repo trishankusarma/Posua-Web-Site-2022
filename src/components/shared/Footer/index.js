@@ -11,7 +11,7 @@ function Footer() {
                         <h3>
                             <span>Contacts</span>
                         </h3>
-                        <p>Arindam Khargaria +91 8638509919</p>
+                        <p>Arindam Kharghoria +91 8638509919</p>
                         <p>Debajit Bora +91 6000364669</p>
                     </div>
                     <div className='col-md-3 col-lg-3 col-12 mt-md-0 mt-3'>
