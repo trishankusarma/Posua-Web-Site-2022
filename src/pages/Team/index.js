@@ -6,6 +6,17 @@ import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import TeamDetails from "../../data/team";
 import { webTeam_heads } from "../../data/webTeam";
+import { decoration_heads } from "../../data/decorationTeam";
+// import { marketing_heads } from "../../data/marketingTeam";
+import { rally_heads } from "../../data/rallyTeam";
+import { food_heads } from "../../data/foodTeam";
+import { content_heads } from "../../data/contentTeam";
+import { hospitality_heads } from "../../data/hospitalityTeam";
+import { design_heads } from "../../data/designTeam";
+import { event_heads } from "../../data/eventTeam";
+import { photography_team } from "../../data/photographyTeam";
+import { logistic_heads } from "../../data/logisticTeam";
+import { infra_heads } from "../../data/infrastructureTeam";
 import TeamProfile from "./team_profile";
 import TeamCard from "./teamCard";
 import japi from "../../assets/japi.png";
@@ -76,30 +87,196 @@ export default function team() {
           {webTeam_heads.map(({ name, role, img, index }) => (
             <TeamProfile name={name} role={role} img={img} key={index} />
           ))}
-
-          {/* <img src={c1} alt="" />
-<img src={c2} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" /> 
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" />
-<img src={frame} alt="" /> */}
         </Carousel>
 
-        <div style={{ fontSize: "2rem", textAlign: "center", padding: "1rem" }}>
-          Details of other teams to be updated soon...
-        </div>
-        {/* </div> */}
+        {/* team 2 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/2" style={{ textDecoration: "none" }}>
+              <span className="team1">DECORATION TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {decoration_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 3 */}
+        {/* <center>
+          <div className="bottom-heading">
+            <Link to="/team1/3" style={{ textDecoration: "none" }}>
+              <span className="team1">MARKETING TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center> */}
+
+        {/* bottom cards */}
+        {/* <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {marketing_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel> */}
+
+        {/* team 4 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/4" style={{ textDecoration: "none" }}>
+              <span className="team1">CULTURAL RALLY TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {rally_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 4 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">FOOD MANAGEMENT TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {food_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 5 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">CONTENT TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {content_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+        {/* team 6 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">HOSPITALITY TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {hospitality_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 7 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">DESIGN TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {design_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 8 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">EVENT MANAGEMENT TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {event_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 8 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">PHOTOGRAPHY/VIDEOGRAPHY TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {photography_team.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 9 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">LOGISTICS TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {logistic_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
+        {/* team 9 */}
+        <center>
+          <div className="bottom-heading">
+            <Link to="/team1/1" style={{ textDecoration: "none" }}>
+              <span className="team1">INFRASTRUCTURE TEAM</span>
+            </Link>
+          </div>
+          <img src={team1} alt="" />
+        </center>
+
+        {/* bottom cards */}
+        <Carousel breakPoints={breakPoints} className="bottom-cards">
+          {infra_heads.map(({ name, role, img, index }) => (
+            <TeamProfile name={name} role={role} img={img} key={index} />
+          ))}
+        </Carousel>
+
       </div>
+
     </>
   );
 }
