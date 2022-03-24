@@ -25,11 +25,16 @@
     margin: auto;
 }
 .sponsers .sponser-img img{
-    height: 100px;
+    height: 250px;
     margin: 50px;
 }
 @media screen and (max-width:768px) {
     .sponsers .sponser-img{
         width: auto;
+    }
+    .sponsers .sponser-img img{
+        height: 250px;
+        padding: 50px;
+        margin: 0 50px;
     }
 }
