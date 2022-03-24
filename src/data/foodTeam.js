@@ -19,12 +19,12 @@ const food_heads = [
   {
     img: Angita,
     name: "Angita Kar",
-    role: "Head",
+    role: "S. member",
   },
   {
     img: Puspasri,
     name: "Puspasri Roy",
-    role: "Head",
+    role: "S. member",
   },
 
 

@@ -13,36 +13,33 @@ const logistic_heads = [
     name: "Devajeet Sarmah",
     role: "Head",
   },
-
-  {
-    img: Debatpal,
-    name: "Debatpal Talukdar",
-    role: "Head",
-  },
-  {
-    img: Bishal,
-    name: "Bishal Pathak",
-    role: "Head",
-  },
-
-  {
-    img: ASHAD,
-    name: "ASHAD SHEIKH",
-    role: "Head",
-  },
-  {
-    img: Nilim,
-    name: "Nilim Sharma",
-    role: "Head",
-  },
-
   {
     img: Ansaar,
     name: "Ansaar Ahmed Khan",
     role: "Head",
   },
 
+  {
+    img: Debatpal,
+    name: "Debatpal Talukdar",
+    role: "S. member",
+  },
+  {
+    img: Bishal,
+    name: "Bishal Pathak",
+    role: "S. member",
+  },
 
+  {
+    img: ASHAD,
+    name: "ASHAD SHEIKH",
+    role: "S. member",
+  },
+  {
+    img: Nilim,
+    name: "Nilim Sharma",
+    role: "S. member",
+  },
 
 ];
 

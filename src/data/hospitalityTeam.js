@@ -10,27 +10,11 @@ import Nirju from "../assets/Nirju.jpg";
 
 const hospitality_heads = [
   {
-    img: Jayashree,
-    name: "Jayashree Mahanta",
-    role: "Head",
-  },
-
-  {
-    img: Debanga,
-    name: "Debanga Bhuyan",
-    role: "Head",
-  },
-  {
     img: Priyam,
     name: "Priyam Borkakoty",
     role: "Head",
   },
 
-  {
-    img: Akash,
-    name: "Akash Hazarika",
-    role: "Head",
-  },
   {
     img: Abhishek,
     name: "Abhishek Kumar Nath",
@@ -38,25 +22,44 @@ const hospitality_heads = [
   },
 
   {
+    img: Jayashree,
+    name: "Jayashree Mahanta",
+    role: "S. member",
+  },
+
+  {
+    img: Debanga,
+    name: "Debanga Bhuyan",
+    role: "S. member",
+  },
+
+  {
+    img: Akash,
+    name: "Akash Hazarika",
+    role: "S. member",
+  },
+
+
+  {
     img: Rocktim,
     name: "Rocktim Sarmah",
-    role: "Head",
+    role: "S. member",
   },
   {
     img: Golam,
     name: "Golam Zoheb Hassan ",
-    role: "Head",
+    role: "S. member",
   },
 
   {
     img: Sarfaraz,
     name: "Sarfaraz Hussain",
-    role: "Head",
+    role: "S. member",
   },
   {
     img: Nirju,
     name: "Nirju Lahkar",
-    role: "Head",
+    role: "S. member",
   },
 
 ];
