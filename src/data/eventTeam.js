@@ -1,6 +1,7 @@
 import SANJEEV from "../assets/SANJEEV.jpg";
 import Arindam from "../assets/Arindam.jpg";
 import Jyotisman from "../assets/Jyotisman.jpg";
+import Udipta from "../assets/Udipta.jpg"
 
 
 const event_heads = [
@@ -19,6 +20,12 @@ const event_heads = [
   {
     img: Jyotisman,
     name: "Jyotisman Borah",
+    role: "Head",
+  },
+
+  {
+    img: Udipta,
+    name: "Udipta Borah",
     role: "Head",
   },
 
