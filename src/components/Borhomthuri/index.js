@@ -4,10 +4,11 @@ import "./styles.css";
 import Card1 from "../../assets/Borhomthuri/2015.svg";
 import Card2 from "../../assets/Borhomthuri/2016.svg";
 import Card3 from "../../assets/Borhomthuri/2017.svg";
-import Card4 from "../../assets/Borhomthuri/Center.svg";
+// import Card4 from "../../assets/Borhomthuri/Center.svg";
 import Card5 from "../../assets/Borhomthuri/2018.svg";
 import Card6 from "../../assets/Borhomthuri/2019.svg";
 import Card7 from "../../assets/Borhomthuri/2020.svg";
+import Card8 from "../../assets/Borhomthuri/2021.svg";
 import japi from "../../assets/japi.png";
 
 const index = () => {
@@ -62,7 +63,12 @@ const index = () => {
             />
           </a>
           <div className="bor-item-center">
-            <HexagonCard bgImg={Card4} key="center" />
+            <a href="https://drive.google.com/file/d/1Y8ZVgXoLMVkyqDe732T_-A-FZL7LQ5CE/view?fbclid=IwAR0fXEVNvM4CDbhGoLjFFIBQtJJDIj0puNrEVxCbA9XwVJ0Lh4yobeepdtM">
+              <HexagonCard bgImg={Card8}
+                year={2021}
+                name="Borhomthuri"
+                key="center" />
+            </a>
           </div>
           <a
             href="https://drive.google.com/file/d/1ajRjjvoH8hCjXx0j5hKPdAMoJ3CykjDF/view?usp=sharing"
