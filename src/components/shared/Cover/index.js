@@ -68,7 +68,7 @@ function Cover() {
             <img className='daystogo' src={daystogo} alt='cloud' />
             <img className='assamese' src={assamese} alt='cloud' />
             <img className='english' src={english} alt='cloud' />
-            <p className='days'>{display[0]} days to go</p>
+            {/* <p className='days'>{display[0]} days to go</p> */}
         </div>
     )
 }
